@@ -44,7 +44,10 @@ class HelpFragment : Fragment() {
         })
 
         TabLayoutMediator(viewbinding.tabLayout, viewbinding.viewPager) { tab, position ->
-            tab.text = "Tab ${position+1}"
+            when(position){
+                0-> tab.text="순위"
+                1-> tab.text="후원"
+            }
         }.attach()
     }
 }
