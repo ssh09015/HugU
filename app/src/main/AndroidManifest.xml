@@ -14,15 +14,42 @@
         android:theme="@style/Theme.HugU"
         tools:targetApi="31">
         <activity
-            android:name=".signup.SignupActivity"
+            android:name=".signup.SignupCampusActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-
+        <activity
+            android:name=".signup.SignupEmailActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".signup.SignupEmailCodeActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
             android:name=".login.LoginActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".signup.SignupPwdActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".signup.SignupNicknameActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
