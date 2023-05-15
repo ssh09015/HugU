@@ -47,6 +47,31 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" >
 
+            <Button
+                android:id="@+id/btn_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00ff000"
+                android:drawableRight="@drawable/btn_go"
+                android:text="백예린"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/tv_profile"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/tv_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="일반회원"
+                android:textSize="10sp"
+                android:textColor="#B8B8B8"
+                android:layout_marginStart="20dp"
+                app:layout_constraintStart_toStartOf="@+id/btn_profile"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_profile"/>
+
         </androidx.constraintlayout.widget.ConstraintLayout>
         
     </androidx.constraintlayout.widget.ConstraintLayout>
