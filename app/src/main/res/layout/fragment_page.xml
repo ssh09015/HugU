@@ -26,18 +26,87 @@
         android:layout_marginTop="22dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/page_title"/>
+        app:layout_constraintTop_toBottomOf="@+id/page_title">
+        
+        <ImageView
+            android:id="@+id/iv_profile"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:src="@drawable/page_profile"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            app:layout_constraintStart_toEndOf="@+id/iv_profile"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" >
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/page_but"
+        android:id="@+id/page_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="50dp"
-        app:layout_constraintTop_toBottomOf="@+id/page_profile"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/page_profile">
+
+        <Button
+            android:id="@+id/btn_sc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00ff000"
+            android:drawableTop="@drawable/btn_s"
+            android:text="스크랩"
+            android:textColor="#121212"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:background="#00ff000"
+            android:drawableTop="@drawable/btn_text"
+            android:text="내가 쓴 글"
+            android:textColor="#121212"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_give"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btn_sc"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_give"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:background="#00ff000"
+            android:drawableTop="@drawable/btn_give"
+            android:text="후원내역"
+            android:textColor="#121212"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn_text"
+            app:layout_constraintTop_toTopOf="parent" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -50,20 +119,90 @@
         android:layout_marginEnd="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/page_but">
+        app:layout_constraintTop_toBottomOf="@+id/page_btn">
 
         <Button
-            android:id="@+id/btn_privacy"
+            android:id="@+id/btn_page1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
             android:background="00ff0000"
             android:text="개인정보"
             android:textColor="#121212"
             android:textSize="14sp"
             android:textAlignment="viewStart"
+            android:drawableRight="@drawable/btn_go"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>
+
+        <Button
+            android:id="@+id/btn_page2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="00ff0000"
+            android:text="고객센터"
+            android:textColor="#121212"
+            android:textSize="14sp"
+            android:textAlignment="viewStart"
+            android:drawableRight="@drawable/btn_go"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_page1"/>
+
+        <Button
+            android:id="@+id/btn_page3"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="00ff0000"
+            android:text="개인정보처리방침"
+            android:textColor="#121212"
+            android:textSize="14sp"
+            android:textAlignment="viewStart"
+            android:drawableRight="@drawable/btn_go"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_page2"/>
+
+        <Button
+            android:id="@+id/btn_page4"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="00ff0000"
+            android:text="버전 정보"
+            android:textColor="#121212"
+            android:textSize="14sp"
+            android:textAlignment="viewStart"
+            android:drawableRight="@drawable/btn_go"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_page3"/>
+
+        <Button
+            android:id="@+id/btn_page5"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="00ff0000"
+            android:text="로그아웃"
+            android:textColor="#121212"
+            android:textSize="14sp"
+            android:textAlignment="viewStart"
+            android:drawableRight="@drawable/btn_go"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_page4"/>
+
+        <Button
+            android:id="@+id/btn_page6"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="00ff0000"
+            android:text="탈퇴하기"
+            android:textColor="#121212"
+            android:textSize="14sp"
+            android:textAlignment="viewStart"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_page5"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
