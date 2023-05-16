@@ -2,24 +2,28 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <item android:id="@+id/comm"
-        app:showAsAction="ifRoom"
-        android:enabled="true"
-        android:title="커뮤니티" />
-
     <item android:id="@+id/home"
         app:showAsAction="ifRoom"
         android:enabled="true"
+        android:icon="@drawable/navi_home"
         android:title="홈" />
+
+    <item android:id="@+id/comm"
+        app:showAsAction="ifRoom"
+        android:enabled="true"
+        android:icon="@drawable/navi_com"
+        android:title="커뮤니티" />
 
     <item android:id="@+id/help"
         app:showAsAction="ifRoom"
         android:enabled="true"
+        android:icon="@drawable/navi_help"
         android:title="도움" />
 
     <item android:id="@+id/page"
         app:showAsAction="ifRoom"
         android:enabled="true"
+        android:icon="@drawable/navi_page"
         android:title="마이페이지" />
 
 </menu>

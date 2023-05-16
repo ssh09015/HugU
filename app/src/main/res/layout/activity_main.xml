@@ -22,8 +22,11 @@
         app:menu="@menu/menu_navi"
         android:layout_width="0dp"
         android:layout_height="56dp"
+        app:itemIconSize="20dp"
         android:background="@color/white"
         app:labelVisibilityMode="labeled"
+        app:itemIconTint="@drawable/menu_selector_color"
+        app:itemTextColor="@drawable/menu_selector_color"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
