@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.HomeFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/time"
+                android:text="9:30"
+                android:includeFontPadding="false"
+                android:textSize="14dp"
+                android:layout_width="29dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="15dp"
+                android:fontFeatureSettings="pnum, lnum"
+                android:lineSpacingExtra="4sp"
+                android:gravity="center_vertical"
+                android:layout_weight="1" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19.42dp"
+                android:layout_marginRight="24dp"
+                android:gravity="right|bottom">
+                <ImageView
+                    android:layout_width="17dp"
+                    android:layout_height="14.17dp"
+                    android:src="@drawable/home_quiz_wifi"
+                    android:layout_alignParentRight="true"/>
+                <ImageView
+                    android:layout_width="17dp"
+                    android:layout_height="14.17dp"
+                    android:src="@drawable/home_quiz_wifi2"/>
+                <ImageView
+                    android:layout_width="17dp"
+                    android:layout_height="14.17dp"
+                    android:src="@drawable/home_quiz_battery"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/hug_u"
+                android:text="HUG U"
+                android:textSize="20dp"
+                android:includeFontPadding="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="14dp"
+                android:gravity="center_vertical"
+                android:layout_weight="1" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="9dp"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/some_id1"
+                    android:text="퀴즈"
+                    android:textSize="18dp"
+                    android:includeFontPadding="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="24dp"
+                    android:gravity="center_vertical" />
+                <TextView
+                    android:id="@+id/some_id2"
+                    android:text="캠페인"
+                    android:textSize="18dp"
+                    android:includeFontPadding="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="24dp"
+                    android:gravity="center_vertical" />
+                <TextView
+                    android:id="@+id/some_id3"
+                    android:text="웹툰"
+                    android:textSize="18dp"
+                    android:includeFontPadding="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="77.5dp"
+                android:src="@drawable/home_campaign_bar">
+            </ImageView>
+            <ImageView
+                android:layout_width="320dp"
+                android:layout_height="145dp"
+                android:layout_marginTop="24dp"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:src="@drawable/home_campaign_sns">
+
+            </ImageView>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="7dp"
+                    android:src="@drawable/home_campaign_tip">
+                </ImageView>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/home_campaign_suppot">
+                </ImageView>
+            </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/home_campaign_meta">
+            </ImageView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>

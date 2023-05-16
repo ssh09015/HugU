@@ -33,7 +33,6 @@ class HelpFragment : Fragment() {
 
         pagerAdapter.addFragment(HelpRankFragment())
         pagerAdapter.addFragment(HelpSupportFragment())
-
         viewbinding.viewPager.adapter=pagerAdapter
 
         viewbinding.viewPager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {

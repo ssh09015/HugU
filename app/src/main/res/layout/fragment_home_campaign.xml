@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".fragment.HomeCampaignFragment">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/campaign"
+            android:layout_width="320dp"
+            android:layout_height="145dp"
+            android:layout_marginTop="24dp"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center"
+            android:src="@drawable/home_campaign_sns">
+
+        </ImageView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp">
+            <ImageView
+                android:id="@+id/tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="7dp"
+                android:src="@drawable/home_campaign_tip">
+            </ImageView>
+            <ImageView
+                android:id="@+id/policy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/home_campaign_suppot">
+            </ImageView>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/meta"
+            android:layout_width="319dp"
+            android:layout_height="106dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/home_campaign_meta">
+        </ImageView>
+
+    </LinearLayout>
+</LinearLayout>
+
+
+</FrameLayout>
