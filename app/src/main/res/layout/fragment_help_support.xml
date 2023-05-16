@@ -13,8 +13,8 @@
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            tools:layout_editor_absoluteX="37dp"
-            tools:layout_editor_absoluteY="16dp">
+            tools:layout_editor_absoluteX="94dp"
+            tools:layout_editor_absoluteY="238dp">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/linearLayout"
@@ -118,36 +118,116 @@
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
-                        android:layout_height="601dp">
+                        android:layout_height="1370dp">
 
                         <TextView
                             android:id="@+id/textView5"
                             android:layout_width="match_parent"
                             android:layout_height="80dp"
+                            android:gravity="center"
                             android:text="후원으로 만든 변화들을 전합니다!"
                             android:textColor="@color/black"
                             android:textSize="20dp"
                             android:textStyle="bold"
-                            android:gravity="center"
-                            app:layout_constraintTop_toTopOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent" />
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
 
                         <ImageView
                             android:id="@+id/imageView2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/rectangle_18"
                             android:scaleType="centerCrop"
+                            android:src="@drawable/rectangle_18"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:layout_marginEnd="230dp"
+                            android:gravity="center"
+                            android:text="수용자 자녀 지원"
+                            android:textColor="#38D42F"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="작은 돈이지만 아이들에게는\n마술램프와 같은 감동이 됩니다.\n\n아이들이 친구들과 간식을 사 먹는 용돈,\n학교 오가는 교통비 등으로 사용됩니다.\n\n아이들에게 일상의 작은 기쁨을 선물해 주세요."
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="50dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/image_555"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+                        <TextView
+                            android:id="@+id/textView7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:layout_marginEnd="230dp"
+                            android:gravity="center"
+                            android:text="수용자 가족 지원"
+                            android:textColor="#38D42F"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="아이들이 수감된 부모님을 만나는 과정에는\n장애물이 많습니다.\n\n대부분의 교도소가 아이들의 주거지와 멀리 떨어져\n있고 대중교통이 닿지 않는 곳에 위치해\n교통비가 크게 듭니다.\n\n면회를 이유로 학교를 결석하기도 어렵습니다.\n\n보호자가 없어서 갈 수 없는 아이들도 있습니다. \n\n아이들이 부모님을 볼 수 있는 기회를\n보장받을 수 있도록 함께해 주세요."
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
                 </LinearLayout>
 
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="445dp"
+                    android:layout_height="174dp"
+
+                    android:background="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
             </androidx.constraintlayout.widget.ConstraintLayout>
         </ScrollView>
+
+
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
