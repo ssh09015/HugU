@@ -102,11 +102,12 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/cl_text2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@id/cl_text1"
+                android:layout_width="413dp"
+                android:layout_height="1371dp"
+                android:background="#1A38D42F"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent">
+                app:layout_constraintTop_toBottomOf="@id/cl_text1">
 
                 <TextView
                     android:id="@+id/textView5"
@@ -197,8 +198,8 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="445dp"
-                android:layout_height="174dp"
+                android:layout_width="413dp"
+                android:layout_height="492dp"
                 android:background="@color/black"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
