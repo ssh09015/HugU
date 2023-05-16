@@ -1,5 +1,6 @@
 package com.example.hugu
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.hugu.databinding.ActivityMainBinding
@@ -53,6 +54,10 @@ class MainActivity : AppCompatActivity() {
                     .commitAllowingStateLoss()
                     return@setOnItemSelectedListener true
                 }
+            }
+            viewBinding.loginBtn2.setOnClickListener{
+                val intent = Intent(this, LoginActivity::class.java)
+                this.startActivity(intent)
             }
         }
     }

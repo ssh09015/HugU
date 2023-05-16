@@ -7,5 +7,12 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="main">#F2CA58</color>
+
+    #색상 추가
+    <color name="yellow">#F2CA58</color>
+    <color name="cray">#C4C4C5</color>
+    <color name="red">#B3261E</color>
+    <color name="cray2">#9A9AA4</color>
+    <color name="seum1">#38D42F</color>
+    <color name="seum2">#FF5100</color>
 </resources>
