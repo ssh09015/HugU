@@ -13,11 +13,18 @@
 
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tabLayout"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="218dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="195dp"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_width="match_parent"/>
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tabIndicatorColor="@color/black"
+            app:tabIndicatorHeight="2dp"
+            app:tabRippleColor="@android:color/transparent"
+            app:tabTextAppearance="@style/tabTextSizeBold"
+            app:tabTextColor="@color/black" />
+
 
         <androidx.viewpager2.widget.ViewPager2
             android:id="@+id/viewPager"

@@ -17,7 +17,6 @@ import com.google.android.material.tabs.TabLayoutMediator
 class HelpFragment : Fragment() {
     lateinit var viewbinding: FragmentHelpBinding
 
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -34,6 +33,9 @@ class HelpFragment : Fragment() {
         pagerAdapter.addFragment(HelpRankFragment())
         pagerAdapter.addFragment(HelpSupportFragment())
 
+        viewbinding.viewPager.setOnClickListener {
+
+        }
         viewbinding.viewPager.adapter=pagerAdapter
 
         viewbinding.viewPager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
@@ -45,9 +47,10 @@ class HelpFragment : Fragment() {
 
         TabLayoutMediator(viewbinding.tabLayout, viewbinding.viewPager) { tab, position ->
             when(position){
-                0-> tab.text="순위"
-                1-> tab.text="후원"
+                0-> tab.text="서명운동"
+                1-> tab.text="후원하기"
             }
         }.attach()
     }
+
 }
