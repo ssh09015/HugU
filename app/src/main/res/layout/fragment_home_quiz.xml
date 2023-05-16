@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.HomeQuizFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:text="수용자 자녀들에 대해 얼마나 알고 계시나요?\n퀴즈를 통해 확인해 보세요"
+            android:textSize="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/pretendard_black"
+            android:textColor="@color/font_gray"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginRight="21dp">
+        </TextView>
+        <ImageView
+            android:id="@+id/hard_quiz"
+            android:layout_width="320dp"
+            android:layout_height="186.17dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="20dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/home_quiz_hard">
+
+        </ImageView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="12dp">
+            <ImageView
+                android:id="@+id/normal_quiz"
+                android:layout_width="154dp"
+                android:layout_height="184dp"
+                android:layout_marginRight="7dp"
+                android:src="@drawable/home_quiz_normal">
+            </ImageView>
+            <ImageView
+                android:id="@+id/easy_quiz"
+                android:layout_width="154dp"
+                android:layout_height="184dp"
+                android:src="@drawable/home_quiz_normal">
+            </ImageView>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -17,6 +17,7 @@ import com.google.android.material.tabs.TabLayoutMediator
 class HelpFragment : Fragment() {
     lateinit var viewbinding: FragmentHelpBinding
 
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -52,5 +53,4 @@ class HelpFragment : Fragment() {
             }
         }.attach()
     }
-
 }

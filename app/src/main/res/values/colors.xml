@@ -15,4 +15,5 @@
     <color name="cray2">#9A9AA4</color>
     <color name="seum1">#38D42F</color>
     <color name="seum2">#FF5100</color>
+    <color name="font_gray"> #666666</color>
 </resources>
