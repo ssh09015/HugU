@@ -33,7 +33,7 @@
             android:layout_width="68dp"
             android:layout_height="68dp"
             android:src="@drawable/page_profile"
-            android:layout_marginStart="20dp"
+            android:layout_marginStart="32dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"/>

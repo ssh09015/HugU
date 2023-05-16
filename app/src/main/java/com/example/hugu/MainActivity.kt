@@ -50,14 +50,10 @@ class MainActivity : AppCompatActivity() {
                 }
                 else -> {
                     supportFragmentManager.beginTransaction()
-                    .replace(R.id.fl_con, HomeFragment())
-                    .commitAllowingStateLoss()
+                        .replace(R.id.fl_con, HomeFragment())
+                        .commitAllowingStateLoss()
                     return@setOnItemSelectedListener true
                 }
-            }
-            viewBinding.loginBtn2.setOnClickListener{
-                val intent = Intent(this, LoginActivity::class.java)
-                this.startActivity(intent)
             }
         }
     }
