@@ -24,10 +24,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_marginStart="30dp"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="10dp"
                     android:gravity="center|left"
                     android:text="📢 후원으로 우리는 함께 성장할 수 있습니다"
-                    android:textSize="12dp"
+                    android:textSize="14dp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -107,8 +107,8 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/cl_text2"
-                android:layout_width="428dp"
-                android:layout_height="1446dp"
+                android:layout_width="432dp"
+                android:layout_height="1481dp"
                 android:background="#1A38D42F"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -181,7 +181,9 @@
                     android:id="@+id/textView7"
                     android:layout_width="wrap_content"
                     android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
                     android:layout_marginEnd="210dp"
+                    android:layout_marginBottom="5dp"
                     android:gravity="center"
                     android:text="수용자 가족 지원"
                     android:textColor="#38D42F"
@@ -197,6 +199,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
+                    android:lineSpacingExtra="3dp"
                     android:text="아이들이 수감된 부모님을 만나는 과정에는\n장애물이 많습니다.\n\n대부분의 교도소가 아이들의 주거지와 멀리 떨어져\n있고 대중교통이 닿지 않는 곳에 위치해\n교통비가 크게 듭니다.\n\n면회를 이유로 학교를 결석하기도 어렵습니다.\n\n보호자가 없어서 갈 수 없는 아이들도 있습니다. \n\n아이들이 부모님을 볼 수 있는 기회를\n보장받을 수 있도록 함께해 주세요."
                     android:textColor="@color/black"
                     android:textSize="17dp"
@@ -208,8 +211,8 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="408dp"
-                android:layout_height="930dp"
+                android:layout_width="410dp"
+                android:layout_height="973dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
