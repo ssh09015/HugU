@@ -11,6 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btn_join"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -182,12 +183,14 @@
                     android:id="@+id/tv_sign7"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="36dp"
                     android:fontFamily="@font/pretendard_bold"
                     android:text="0.5%"
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="16sp"
                     app:layout_constraintEnd_toStartOf="@+id/tv_sign8"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintHorizontal_chainStyle="packed"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/tv_sign6" />
@@ -196,11 +199,13 @@
                     android:id="@+id/tv_sign8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="36dp"
                     android:fontFamily="@font/pretendard_regular"
                     android:text="의 "
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/tv_sign9"
                     app:layout_constraintStart_toEndOf="@+id/tv_sign7"
                     app:layout_constraintTop_toBottomOf="@+id/tv_sign6" />
@@ -209,11 +214,14 @@
                     android:id="@+id/tv_sign9"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="36dp"
                     android:fontFamily="@font/pretendard_bold"
                     android:text="숨겨진 피해자"
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="16sp"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/tv_sign10"
                     app:layout_constraintStart_toEndOf="@+id/tv_sign8"
                     app:layout_constraintTop_toBottomOf="@+id/tv_sign6" />
@@ -222,12 +230,14 @@
                     android:id="@+id/tv_sign10"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="36dp"
                     android:fontFamily="@font/pretendard_regular"
                     android:text="입니다."
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="16sp"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/tv_sign9"
                     app:layout_constraintTop_toBottomOf="@+id/tv_sign6" />
 
@@ -308,10 +318,133 @@
                     app:layout_constraintStart_toEndOf="@+id/tv_sign14"
                     app:layout_constraintTop_toBottomOf="@+id/tv_sign13" />
 
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_sign3"
+                    android:layout_width="147dp"
+                    android:layout_height="147dp"
+                    android:layout_marginTop="36dp"
+                    android:background="@drawable/back_oval"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_sign15">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/pretendard_bold"
+                        android:text="연간 수용자 자녀\n약 54,000명"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/tv_sign16_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/pretendard_regular"
+                    android:text="이를 통해 "
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_sign16_2"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cl_sign3" />
+
+                <TextView
+                    android:id="@+id/tv_sign16_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/pretendard_bold"
+                    android:text="'세움'"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_sign16_3"
+                    app:layout_constraintStart_toEndOf="@+id/tv_sign16_1"
+                    app:layout_constraintTop_toBottomOf="@+id/cl_sign3" />
+
+                <TextView
+                    android:id="@+id/tv_sign16_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/pretendard_regular"
+                    android:text="은"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tv_sign16_2"
+                    app:layout_constraintTop_toBottomOf="@+id/cl_sign3" />
+
+                <TextView
+                    android:id="@+id/tv_sign17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/pretendard_bold"
+                    android:text="연간 54,000명"
+                    android:textAlignment="center"
+                    android:textColor="@color/seum2"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_sign18"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_sign16_1"/>
+
+                <TextView
+                    android:id="@+id/tv_sign18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/pretendard_regular"
+                    android:text="의 수용자 자녀를 만나게 되었습니다."
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tv_sign17"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_sign16_2"/>
+
+                <TextView
+                    android:id="@+id/tv_sign19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="38dp"
+                    android:fontFamily="@font/pretendard_regular"
+                    android:text="(국가인권위원회, 2017)"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_sign17"/>
+
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.core.widget.NestedScrollView>
+    
+    <Button
+        android:id="@+id/btn_join"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="서명운동 참여하기"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:drawablePadding="5dp"
+        android:drawableLeft="@drawable/sign_pencil"
+        android:background="@drawable/btn_round"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
