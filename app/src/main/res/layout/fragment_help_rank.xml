@@ -9,7 +9,7 @@
     <androidx.core.widget.NestedScrollView
         android:id="@+id/ns_sign"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/btn_join"
         app:layout_constraintEnd_toEndOf="parent"
@@ -19,12 +19,26 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
+            <TextView
+                android:id="@+id/tv_notice"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:gravity="center|left"
+                android:text="📢 서명운동 참여로 수용자 자녀들에게 힘이 되어주세요!"
+                android:textSize="12sp"
+                android:textColor="@color/font_gray"
+                android:fontFamily="@font/pretendard_regular"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/cl_sign1"/>
+
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/cl_sign1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/back_orange"
-                app:layout_constraintTop_toTopOf="parent">
+                app:layout_constraintTop_toBottomOf="@+id/tv_notice">
 
                 <TextView
                     android:id="@+id/tv_sign1"
@@ -435,15 +449,18 @@
 
     </androidx.core.widget.NestedScrollView>
     
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_join"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:text="서명운동 참여하기"
+        android:paddingLeft="130dp"
+        android:gravity="center|left"
         android:textColor="@color/white"
         android:textSize="14sp"
-        android:drawablePadding="5dp"
+        android:fontFamily="@font/pretendard_bold"
         android:drawableLeft="@drawable/sign_pencil"
+        android:drawablePadding="15dp"
         android:background="@drawable/btn_round"
         app:layout_constraintBottom_toBottomOf="parent"/>
 
