@@ -13,8 +13,8 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/cl_text1"
-                android:layout_width="429dp"
-                android:layout_height="515dp"
+                android:layout_width="424dp"
+                android:layout_height="474dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
@@ -36,7 +36,7 @@
                 <ImageView
                     android:id="@+id/imageView"
                     android:layout_width="0dp"
-                    android:layout_height="270dp"
+                    android:layout_height="230dp"
                     android:scaleType="centerCrop"
                     android:src="@drawable/image_554"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -47,23 +47,24 @@
                     android:id="@+id/textView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="130dp"
-                    android:layout_marginBottom="180dp"
+                    android:layout_marginEnd="120dp"
+                    android:layout_marginBottom="120dp"
                     android:text="수용자 자녀의\n비밀친구가 되어주세요."
                     android:textColor="@color/white"
                     android:textSize="25dp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="@+id/imageView"
                     app:layout_constraintEnd_toEndOf="@+id/imageView"
+                    app:layout_constraintHorizontal_bias="0.502"
                     app:layout_constraintStart_toStartOf="@+id/imageView"
-                    app:layout_constraintTop_toBottomOf="@+id/textView" />
+                    app:layout_constraintTop_toTopOf="@+id/imageView" />
 
                 <ImageButton
                     android:id="@+id/share_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="300dp"
-                    android:layout_marginTop="170dp"
+                    android:layout_marginTop="140dp"
                     android:background="@android:color/transparent"
                     android:src="@drawable/frame_11__1_"
                     app:layout_constraintBottom_toBottomOf="@+id/imageView"
