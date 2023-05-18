@@ -79,6 +79,7 @@
         </LinearLayout>
 
         <TextView
+            android:id="@+id/score"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
@@ -86,7 +87,7 @@
             android:includeFontPadding="false"
             android:fontFamily="@font/pretendard_bold"
             android:textColor="@color/black"
-            android:text="8 / 10"
+            android:text="3 / 5"
             android:textSize="22dp">
         </TextView>
         <TextView

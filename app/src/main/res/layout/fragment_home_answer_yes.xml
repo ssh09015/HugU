@@ -25,10 +25,10 @@
             android:src="@drawable/home_quiz_popup_correct">
         </ImageView>
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/yes_body"
+            android:layout_width="262dp"
+            android:layout_height="175dp"
             android:layout_marginLeft="11dp"
-            android:layout_marginTop="36dp"
             android:gravity="center"
             android:text="일반 수용자는 재복역률이 3년 안에 25%입니다. \n\n반면, 세움에서 수용자 자녀를 지원했을 때, 부모가\n\n다시 복역하는 비율은 5.7%에 머물렀습니다."
             android:textSize="13dp">
@@ -37,7 +37,6 @@
             android:id="@+id/next"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="51dp"
             android:src="@drawable/home_quiz_popup_next">
         </ImageView>
     </LinearLayout>

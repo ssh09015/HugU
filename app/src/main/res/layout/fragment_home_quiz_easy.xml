@@ -24,7 +24,6 @@
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="29dp"
                 android:layout_weight="1">
                 <ImageView
                     android:layout_width="wrap_content"
@@ -43,7 +42,7 @@
 
                 <TextView
                     android:id="@+id/difficulty"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:includeFontPadding="false"
                     android:textSize="14dp"
@@ -58,6 +57,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center|right"
+                    android:layout_marginRight="29dp"
                     android:src="@drawable/home_quiz_out">
                 </ImageView>
             </FrameLayout>
@@ -120,18 +120,19 @@
             </FrameLayout>
             <TextView
                 android:id="@+id/easy_body"
-                android:text="수용자 자녀을 돕는 '세움'에서\n\n지원한 수용자의 재복역율을 5.7%이다"
-                android:textSize="20dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:layout_marginTop="72dp">
-            </TextView>
+                android:layout_height="239dp"
+                android:layout_marginTop="72dp"
+                android:gravity="center|top"
+                android:layout_weight="1"
+                android:text="2017년 기준,\n\n수용자 자녀는 10%으로\n\n약 5만 4천명이다"
+                android:textSize="20dp"></TextView>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="150dp"
                 android:layout_marginLeft="20dp"
+                android:layout_weight="1"
                 android:layout_marginRight="20dp"
                 android:orientation="horizontal">
                 <ImageView
