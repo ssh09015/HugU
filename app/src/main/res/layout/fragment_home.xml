@@ -32,10 +32,14 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:tabTextAppearance="@style/tabTextSizeBold"
+        app:tabIndicatorHeight="3dp"
+        app:tabMode="auto"
         android:fontFamily="@font/pretendard_black"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:tabIndicator="@drawable/home_title_line"
         android:layout_width="280dp"/>
+
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/viewPager"
         android:layout_width="match_parent"

@@ -46,6 +46,7 @@
 
                     <com.google.android.material.tabs.TabLayout
                         android:id="@+id/tabLayout"
+                        android:theme="@style/TabTheme"
                         android:layout_width="218dp"
                         android:layout_height="55dp"
                         android:layout_marginEnd="35dp"
@@ -53,14 +54,10 @@
                         app:layout_constraintEnd_toStartOf="@+id/imageView6"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:tabIndicatorColor="@color/black"
+                        android:fontFamily="@font/pretendard_black"
                         android:textStyle="bold"
                         app:tabIndicatorHeight="3dp"
-                        app:tabRippleColor="@android:color/transparent"
-                        app:tabSelectedTextColor="@color/black"
-                        app:tabTextAppearance="@style/tabTextSizeBold"
-                        app:tabTextColor="#9A9AA4"
-                        tools:ignore="MissingConstraints" />
+                        app:tabTextAppearance="@style/tabTextSizeBold" />
 
                     <ImageView
                         android:id="@+id/imageView6"
