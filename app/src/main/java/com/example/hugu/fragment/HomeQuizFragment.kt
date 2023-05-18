@@ -72,16 +72,16 @@ class HomeQuizFragment : Fragment() {
 
         if(easy_count==1){
             score++
-            yes_body.setText("2017년 국가인권위원회의 실태조사결과\n\n수용자 자녀는 연간 약 5만 4천명입니다.\n\n또한 2021년 전국 교정시설 수용자 전수조사 결과\n\n1만 2천명으로 나타났습니다.")
+            yes_body.setText("2017년에서야 국가인권위의 의뢰를 받아\n\n법무부의 협조를 통해 수용자 자녀의\n\n실태를 파악할 수 있었습니다. \n\n이때 이루어진 조사가 수용자 자녀의 인권과 \n\n관련된 첫 조사였습니다. ")
         }else if(easy_count==2){
             score++
-            yes_body.setText("심리정서 상담, 성장지원비, 멘토링 활동,\n\n당사자 청년 자문단, 면회 지원 등\n\n수용자 자녀가 당당하게 서기 위해\n\n세움에서 많은 지원을 하고 있습니다.")
+            yes_body.setText("핸드폰 개통 등을 할 때, 친권자인 부모가\n\n살아있는 경우에는 법정대리인 동반이\n\n필수이기에 많은 수용자 자녀들이\n\n이런 과정에서 어려움을 겪습니다.")
         }else if(easy_count==3){
             score++
-            yes_body.setText("일반 수용자는 재복역률이 3년 안에 25%입니다.\n\n반면, 세움에서 수용자 자녀를 지원했을 때, 부모가\n\n다시 복역하는 비율은 5.7%에 머물렀습니다.")
+            yes_body.setText("아동복지실천회 세움은 수용자(수감자) 자녀가\n\n당당하게 사는 세상을 만들기 위해서 \n\n2015년 설립된 비영리단체로서 수용자 자녀의 \n\n안전한 보호와 성장, 인권옹호를 위해 활동하는 \n\n국내 유일의 단체입니다.")
         }else if(easy_count==4){
             score++
-            yes_body.setText("수용자 자녀 부모와의 격리로\n\n경제적 고통뿐만 아니라\n\n사회적 편견과 낙인으로 인한 \n\n심리적/정서적 고통도 크다.")
+            yes_body.setText("본 조사에서 확인한 우리나라 수용자자녀수는\n\n연간 5만 4천명으로 추산되었습니다.\n\n이는 우리나라 아동인구의 0.49%가량 됩니다.\n\n해마다 5만 명의 아동이 누적되어 가고 있는만큼\n\n이들에게는 적극적인 지원이 절실합니다.")
         }else if(easy_count==5) {
             score++
             yes_body.setText("우리나라 헌법 제13조 3항은 \n\n연좌제를 금하고 있습니다.\n\n그러므로 ‘범죄자의 자녀’로 낙인찍어\n\n고통을 받게 해서는 안 됩니다.")
@@ -111,13 +111,13 @@ class HomeQuizFragment : Fragment() {
         dialog6.setCanceledOnTouchOutside(false) // 외부 여백 클릭 시 Dialog 닫히지 않도록 설정
 
         if(easy_count==1){
-            no_body.setText("2017년 국가인권위원회의 실태조사결과\n\n수용자 자녀는 연간 약 5만 4천명입니다.\n\n또한 2021년 전국 교정시설 수용자 전수조사 결과\n\n1만 2천명으로 나타났습니다.")
+            no_body.setText("2017년에서야 국가인권위의 의뢰를 받아\n\n법무부의 협조를 통해 수용자 자녀의\n\n실태를 파악할 수 있었습니다. \n\n이때 이루어진 조사가 수용자 자녀의 인권과 \n\n관련된 첫 조사였습니다. ")
         }else if(easy_count==2){
-            no_body.setText("심리정서 상담, 성장지원비, 멘토링 활동,\n\n당사자 청년 자문단, 면회 지원 등\n\n수용자 자녀가 당당하게 서기 위해\n\n세움에서 많은 지원을 하고 있습니다.")
+            no_body.setText("핸드폰 개통 등을 할 때, 친권자인 부모가\n\n살아있는 경우에는 법정대리인 동반이\n\n필수이기에 많은 수용자 자녀들이\n\n이런 과정에서 어려움을 겪습니다.")
         }else if(easy_count==3){
-            no_body.setText("일반 수용자는 재복역률이 3년 안에 25%입니다.\n\n반면, 세움에서 수용자 자녀를 지원했을 때, 부모가\n\n다시 복역하는 비율은 5.7%에 머물렀습니다.")
+            no_body.setText("아동복지실천회 세움은 수용자(수감자) 자녀가\n\n당당하게 사는 세상을 만들기 위해서 \n\n2015년 설립된 비영리단체로서 수용자 자녀의 \n\n안전한 보호와 성장, 인권옹호를 위해 활동하는 \n\n국내 유일의 단체입니다.")
         }else if(easy_count==4){
-            no_body.setText("수용자 자녀 부모와의 격리로\n\n경제적 고통뿐만 아니라\n\n사회적 편견과 낙인으로 인한 \n\n심리적/정서적 고통도 크다.")
+            no_body.setText("본 조사에서 확인한 우리나라 수용자자녀수는\n\n연간 5만 4천명으로 추산되었습니다.\n\n이는 우리나라 아동인구의 0.49%가량 됩니다.\n\n해마다 5만 명의 아동이 누적되어 가고 있는만큼\n\n이들에게는 적극적인 지원이 절실합니다.")
         }else if(easy_count==5) {
             no_body.setText("우리나라 헌법 제13조 3항은 \n\n연좌제를 금하고 있습니다.\n\n그러므로 ‘범죄자의 자녀’로 낙인찍어\n\n고통을 받게 해서는 안 됩니다.")
         }
@@ -207,14 +207,14 @@ class HomeQuizFragment : Fragment() {
                             line2.visibility = View.VISIBLE
                             count = 0
                             difficulty.setText("Q.2")
-                            easy_body.setText("수용자 자녀가 건강하게 성장할 수\n\n있도록 세움에서\n\n정기적으로 지원한다")
+                            easy_body.setText("미성년자 수용자 자녀는 핸드폰 개통, \n\n여권 발급, 개인정보 열람 등에 대해\n\n법정대리인 동의없이 예외적으로 가능하다.\n\n")
                         } else if (easy_count == 2) {
                             showDialog6(requireContext(), easy_count, dialog1) //맞은거
                             line2.visibility = View.INVISIBLE
                             line3.visibility = View.VISIBLE
                             count = 0
                             difficulty.setText("Q.3")
-                            easy_body.setText("세움에서 정기적으로\n\n지원한 수용자의 재복역율은 \n\n5.7%이다")
+                            easy_body.setText("세움은 국내에서 수용자 자녀의\n\n안전한 보호와 성장, 인권옹호를 위해\n\n활동하는 국내 유일 단체이다.")
                             Log.e("HelpFragment", "Quiz3")
                         } else if (easy_count == 3) {
                             showDialog4(requireContext(), easy_count, dialog1) //틀린거
@@ -222,7 +222,7 @@ class HomeQuizFragment : Fragment() {
                             line4.visibility = View.VISIBLE
                             count = 0
                             difficulty.setText("Q.4")
-                            easy_body.setText("수용자 자녀는\n\n경제적 고통뿐만 아니라\n\n심리적 정서적 고통도 함께 겪고 있는\n\n‘숨겨진 피해자’이다.")
+                            easy_body.setText("2017년 국가인권위원회가 대대적인\n\n실태조사를 펼치며 추산한 결과로는\n\n연간 수용자 자녀는 5만4000여명에 달한다.")
                             Log.e("HelpFragment", "Quiz4")
                         } else if (easy_count == 4) {
                             showDialog4(requireContext(), easy_count, dialog1) //맞은거
@@ -260,14 +260,14 @@ class HomeQuizFragment : Fragment() {
                         line1.visibility = View.INVISIBLE
                         line2.visibility = View.VISIBLE
                         difficulty.setText("Q.2")
-                        easy_body.setText("미성년자 수용자 자녀는 핸드폰 개통, \n\n여권 발급, 개인정보 열람 등을\n\n만들기 힘듭니다.\n\n그 이유는 무엇일까요?")
+                        easy_body.setText("미성년자 수용자 자녀는 핸드폰 개통, \n\n여권 발급, 개인정보 열람 등에 대해\n\n법정대리인 동의없이 예외적으로 가능하다.\n\n")
                         count = 0
                     } else if (easy_count == 2) {
                         showDialog4(requireContext(), easy_count, dialog1) //틀린거
                         line2.visibility = View.INVISIBLE
                         line3.visibility = View.VISIBLE
                         difficulty.setText("Q.3")
-                        easy_body.setText("수용자 자녀를 지원하는\n\n해외 민간 단체가 \n\n아닌 것은 무엇인가요?")
+                        easy_body.setText("세움은 국내에서 수용자 자녀의\n\n안전한 보호와 성장, 인권옹호를 위해\n\n활동하는 국내 유일 단체이다.")
                         count = 0
                         Log.e("HelpFragment", "Quiz3")
                     } else if (easy_count == 3) {
@@ -275,7 +275,7 @@ class HomeQuizFragment : Fragment() {
                         line3.visibility = View.INVISIBLE
                         line4.visibility = View.VISIBLE
                         difficulty.setText("Q.4")
-                        easy_body.setText("우리나라에서 법률과 관련된 내용으로\n\n옳은 것은 무엇일까요?")
+                        easy_body.setText("2017년 국가인권위원회가 대대적인\n\n실태조사를 펼치며 추산한 결과로는\n\n연간 수용자 자녀는 5만4000여명에 달한다.")
                         count = 0
                         Log.e("HelpFragment", "Quiz4")
                     } else if (easy_count == 4){
@@ -283,7 +283,7 @@ class HomeQuizFragment : Fragment() {
                         line4.visibility = View.INVISIBLE
                         line5.visibility = View.VISIBLE
                         difficulty.setText("Q.5")
-                        easy_body.setText("교정본부가 하는 일로 \n\n옳지 않은 내용은 무엇일까요?")
+                        easy_body.setText("대한민국 헌법은 연좌제\n\n(범죄인과 특정한 관계에 있는 사람에게 \n\n연대책임을 지게 하고 처벌하는 제도)\n\n를 금지하고 있다")
                         count = 0
                         Log.e("HelpFragment", "Quiz5")
                     }else if (easy_count == 5){

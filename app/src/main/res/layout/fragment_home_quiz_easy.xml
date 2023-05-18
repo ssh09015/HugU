@@ -125,7 +125,7 @@
                 android:layout_marginTop="72dp"
                 android:gravity="center|top"
                 android:layout_weight="1"
-                android:text="2017년 기준,\n\n수용자 자녀는 10%으로\n\n약 5만 4천명이다"
+                android:text="1995년, 수용자 자녀의\n\n인권과 관련된 첫 조사가 이루어졌다. "
                 android:textSize="20dp"></TextView>
 
             <LinearLayout
