@@ -38,7 +38,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/back_orange"
-                app:layout_constraintTop_toBottomOf="@+id/tv_notice">
+                app:layout_constraintTop_toBottomOf="@+id/tv_notice"
+                tools:layout_editor_absoluteX="-34dp">
 
                 <TextView
                     android:id="@+id/tv_sign1"
@@ -69,7 +70,7 @@
                     app:layout_constraintTop_toBottomOf="@id/tv_sign1" />
 
                 <TextView
-                    android:id="@+id/tv_s1"
+                    android:id="@+id/tv_s1_1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="30dp"
@@ -79,13 +80,13 @@
                     android:text="수용자 자녀가"
                     android:textColor="@color/white"
                     android:textSize="22sp"
-                    app:layout_constraintBottom_toTopOf="@+id/tv_s2"
+                    app:layout_constraintBottom_toTopOf="@+id/tv_s1_2"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/iv_sign1" />
 
                 <TextView
-                    android:id="@+id/tv_s2"
+                    android:id="@+id/tv_s1_2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="30dp"
@@ -94,13 +95,13 @@
                     android:text="세상에 당당하게 서도록"
                     android:textColor="@color/white"
                     android:textSize="22sp"
-                    app:layout_constraintBottom_toTopOf="@+id/tv_s3"
+                    app:layout_constraintBottom_toTopOf="@+id/tv_s1_3"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_s1" />
+                    app:layout_constraintTop_toBottomOf="@+id/tv_s1_1" />
 
                 <TextView
-                    android:id="@+id/tv_s3"
+                    android:id="@+id/tv_s1_3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="30dp"
@@ -113,10 +114,10 @@
                     app:layout_constraintBottom_toBottomOf="@+id/iv_sign1"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_s2" />
+                    app:layout_constraintTop_toBottomOf="@+id/tv_s1_2" />
 
                 <TextView
-                    android:id="@+id/tv_sign2"
+                    android:id="@+id/tv_s2_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="48dp"
@@ -130,7 +131,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/iv_sign1" />
 
                 <TextView
-                    android:id="@+id/tv_sign3"
+                    android:id="@+id/tv_s2_2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/pretendard_regular"
@@ -140,10 +141,10 @@
                     android:textSize="16sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_sign2" />
+                    app:layout_constraintTop_toBottomOf="@+id/tv_s2_1" />
 
                 <TextView
-                    android:id="@+id/tv_sign4"
+                    android:id="@+id/tv_s2_3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/pretendard_bold"
@@ -151,13 +152,13 @@
                     android:textAlignment="center"
                     android:textColor="@color/seum2"
                     android:textSize="16sp"
-                    app:layout_constraintEnd_toStartOf="@+id/tv_sign5"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_s2_4"
                     app:layout_constraintHorizontal_chainStyle="packed"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_sign3" />
+                    app:layout_constraintTop_toBottomOf="@+id/tv_s2_2" />
 
                 <TextView
-                    android:id="@+id/tv_sign5"
+                    android:id="@+id/tv_s2_4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/pretendard_regular"
@@ -166,8 +167,8 @@
                     android:textColor="@color/black"
                     android:textSize="16sp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/tv_sign4"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_sign3" />
+                    app:layout_constraintStart_toEndOf="@+id/tv_s2_3"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_s2_2" />
 
                 <ImageView
                     android:id="@+id/iv_sign2"
@@ -175,26 +176,26 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="36dp"
                     android:src="@drawable/sign2"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_sign5"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent" />
+                    app:layout_constraintTop_toBottomOf="@+id/tv_s2_4" />
 
                 <TextView
-                    android:id="@+id/tv_sign6"
+                    android:id="@+id/tv_s3_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/pretendard_regular"
                     android:layout_marginTop="12dp"
+                    android:fontFamily="@font/pretendard_regular"
                     android:text="관심을 가지고 들여다보지 않으면 보이지 않는"
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="16sp"
-                    app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/iv_sign2" />
 
                 <TextView
-                    android:id="@+id/tv_sign7"
+                    android:id="@+id/tv_s3_2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="36dp"
@@ -203,14 +204,14 @@
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="16sp"
-                    app:layout_constraintEnd_toStartOf="@+id/tv_sign8"
                     app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_s3_3"
                     app:layout_constraintHorizontal_chainStyle="packed"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_sign6" />
+                    app:layout_constraintTop_toBottomOf="@+id/tv_s3_1" />
 
                 <TextView
-                    android:id="@+id/tv_sign8"
+                    android:id="@+id/tv_s3_3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="36dp"
@@ -220,12 +221,12 @@
                     android:textColor="@color/black"
                     android:textSize="16sp"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/tv_sign9"
-                    app:layout_constraintStart_toEndOf="@+id/tv_sign7"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_sign6" />
+                    app:layout_constraintEnd_toStartOf="@+id/tv_s3_4"
+                    app:layout_constraintStart_toEndOf="@+id/tv_s3_2"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_s3_1" />
 
                 <TextView
-                    android:id="@+id/tv_sign9"
+                    android:id="@+id/tv_s3_4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="36dp"
@@ -237,8 +238,8 @@
 
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/tv_sign10"
-                    app:layout_constraintStart_toEndOf="@+id/tv_sign8"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_sign6" />
+                    app:layout_constraintStart_toEndOf="@+id/tv_s3_3"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_s3_1" />
 
                 <TextView
                     android:id="@+id/tv_sign10"
@@ -250,10 +251,10 @@
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="16sp"
-                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/tv_sign9"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_sign6" />
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tv_s3_4"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_s3_1" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -266,7 +267,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/cl_sign1">
 
                 <TextView
-                    android:id="@+id/tv_sign11"
+                    android:id="@+id/tv_s4_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="36dp"
@@ -280,7 +281,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/tv_sign12"
+                    android:id="@+id/tv_s4_2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/pretendard_regular"
@@ -290,10 +291,10 @@
                     android:textSize="16sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_sign11" />
+                    app:layout_constraintTop_toBottomOf="@+id/tv_s4_1" />
 
                 <TextView
-                    android:id="@+id/tv_sign13"
+                    android:id="@+id/tv_s4_3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/pretendard_regular"
@@ -303,10 +304,10 @@
                     android:textSize="16sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_sign12" />
+                    app:layout_constraintTop_toBottomOf="@+id/tv_s4_2" />
 
                 <TextView
-                    android:id="@+id/tv_sign14"
+                    android:id="@+id/tv_s4_4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/pretendard_bold"
@@ -314,13 +315,13 @@
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="16sp"
-                    app:layout_constraintEnd_toStartOf="@+id/tv_sign15"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_s4_5"
                     app:layout_constraintHorizontal_chainStyle="packed"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_sign13" />
+                    app:layout_constraintTop_toBottomOf="@+id/tv_s4_3" />
 
                 <TextView
-                    android:id="@+id/tv_sign15"
+                    android:id="@+id/tv_s4_5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/pretendard_regular"
@@ -329,18 +330,18 @@
                     android:textColor="@color/black"
                     android:textSize="16sp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/tv_sign14"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_sign13" />
+                    app:layout_constraintStart_toEndOf="@+id/tv_s4_4"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_s4_3" />
 
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/cl_sign3"
+                    android:id="@+id/cl_sign2_1"
                     android:layout_width="147dp"
                     android:layout_height="147dp"
                     android:layout_marginTop="36dp"
                     android:background="@drawable/back_oval"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_sign15">
+                    app:layout_constraintTop_toBottomOf="@+id/tv_s4_5">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -358,7 +359,7 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <TextView
-                    android:id="@+id/tv_sign16_1"
+                    android:id="@+id/tv_s5_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/pretendard_regular"
@@ -367,13 +368,13 @@
                     android:textColor="@color/black"
                     android:textSize="16sp"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/tv_sign16_2"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_s5_2"
                     app:layout_constraintHorizontal_chainStyle="packed"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/cl_sign3" />
+                    app:layout_constraintTop_toBottomOf="@+id/cl_sign2_1" />
 
                 <TextView
-                    android:id="@+id/tv_sign16_2"
+                    android:id="@+id/tv_s5_2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/pretendard_bold"
@@ -383,12 +384,12 @@
                     android:textSize="16sp"
 
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/tv_sign16_3"
-                    app:layout_constraintStart_toEndOf="@+id/tv_sign16_1"
-                    app:layout_constraintTop_toBottomOf="@+id/cl_sign3" />
+                    app:layout_constraintEnd_toStartOf="@+id/tv_s5_3"
+                    app:layout_constraintStart_toEndOf="@+id/tv_s5_1"
+                    app:layout_constraintTop_toBottomOf="@+id/cl_sign2_1" />
 
                 <TextView
-                    android:id="@+id/tv_sign16_3"
+                    android:id="@+id/tv_s5_3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/pretendard_regular"
@@ -398,11 +399,11 @@
                     android:textSize="16sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/tv_sign16_2"
-                    app:layout_constraintTop_toBottomOf="@+id/cl_sign3" />
+                    app:layout_constraintStart_toEndOf="@+id/tv_s5_2"
+                    app:layout_constraintTop_toBottomOf="@+id/cl_sign2_1" />
 
                 <TextView
-                    android:id="@+id/tv_sign17"
+                    android:id="@+id/tv_s5_4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/pretendard_bold"
@@ -410,13 +411,13 @@
                     android:textAlignment="center"
                     android:textColor="@color/seum2"
                     android:textSize="16sp"
-                    app:layout_constraintEnd_toStartOf="@+id/tv_sign18"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_s5_5"
                     app:layout_constraintHorizontal_chainStyle="packed"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_sign16_1"/>
+                    app:layout_constraintTop_toBottomOf="@+id/tv_s5_1"/>
 
                 <TextView
-                    android:id="@+id/tv_sign18"
+                    android:id="@+id/tv_s5_5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/pretendard_regular"
@@ -425,8 +426,8 @@
                     android:textColor="@color/black"
                     android:textSize="16sp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/tv_sign17"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_sign16_2"/>
+                    app:layout_constraintStart_toEndOf="@+id/tv_s5_4"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_s5_2"/>
 
                 <TextView
                     android:id="@+id/tv_sign19"
@@ -441,9 +442,302 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_sign17"/>
+                    app:layout_constraintTop_toBottomOf="@+id/tv_s5_4"/>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_sign3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/cl_sign2">
+
+                <TextView
+                    android:id="@+id/tv_s6_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36dp"
+                    android:fontFamily="@font/pretendard_regular"
+                    android:text="사회의 차별과 편견에 움츠려든 "
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_s6_2"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_s6_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36dp"
+                    android:fontFamily="@font/pretendard_bold"
+                    android:text="수용자 자녀"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_s6_3"
+                    app:layout_constraintStart_toEndOf="@+id/tv_s6_1"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_s6_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36dp"
+                    android:fontFamily="@font/pretendard_regular"
+                    android:text="는"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tv_s6_2"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_s6_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/pretendard_regular"
+                    android:text="세상 앞에 서기보다는 숨기를 선택하며"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_s6_2" />
+
+                <TextView
+                    android:id="@+id/tv_s6_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/pretendard_bold"
+                    android:text="다양한 어려움"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_s6_6"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_s6_4" />
+
+                <TextView
+                    android:id="@+id/tv_s6_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/pretendard_regular"
+                    android:text="과"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tv_s6_5"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_s6_4" />
+
+                <TextView
+                    android:id="@+id/tv_s6_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/pretendard_bold"
+                    android:text="경제적 &amp; 심리적 &amp; 정서적 고통"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_s6_8"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_s6_5" />
+
+                <TextView
+                    android:id="@+id/tv_s6_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/pretendard_regular"
+                    android:text="을 마주합니다."
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tv_s6_7"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_s6_5" />
+
+                <ImageView
+                    android:id="@+id/iv_sign3"
+                    android:layout_width="match_parent"
+                    android:layout_height="225dp"
+                    android:layout_marginTop="60dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sign3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_s6_8" />
+
+                <TextView
+                    android:id="@+id/tv_s7_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="121dp"
+                    android:layout_marginEnd="30dp"
+                    android:fontFamily="@font/pretendard_bold"
+                    android:text="숨겨진 아이들을 위한"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    app:layout_constraintBottom_toTopOf="@+id/tv_s7_2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/iv_sign3"
+                    app:layout_constraintVertical_chainStyle="packed" />
+
+                <TextView
+                    android:id="@+id/tv_s7_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:fontFamily="@font/pretendard_bold"
+                    android:text="UN의 권고"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/iv_sign3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_s7_1" />
+
+                <TextView
+                    android:id="@+id/tv_s8_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:fontFamily="@font/pretendard_regular"
+                    android:text="2009년, '"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_s8_2"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/iv_sign3" />
+
+                <TextView
+                    android:id="@+id/tv_s8_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:fontFamily="@font/pretendard_bold"
+                    android:text="UN 아동권리위원회"
+                    android:textAlignment="center"
+                    android:textColor="@color/seum2"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_s8_3"
+                    app:layout_constraintStart_toEndOf="@+id/tv_s8_1"
+                    app:layout_constraintTop_toBottomOf="@+id/iv_sign3" />
+
+                <TextView
+                    android:id="@+id/tv_s8_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:fontFamily="@font/pretendard_regular"
+                    android:text="'가"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tv_s8_2"
+                    app:layout_constraintTop_toBottomOf="@+id/iv_sign3" />
+
+                <TextView
+                    android:id="@+id/tv_s8_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/pretendard_regular"
+                    android:text="한국이 제출한 "
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_s8_5"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_s8_1" />
+
+                <TextView
+                    android:id="@+id/tv_s8_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/pretendard_bold"
+                    android:text="UN아동권리협약 5, 6차 국가보고서"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_s8_6"
+                    app:layout_constraintStart_toEndOf="@+id/tv_s8_4"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_s8_2" />
+
+                <TextView
+                    android:id="@+id/tv_s8_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/pretendard_regular"
+                    android:text="에"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tv_s8_5"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_s8_3" />
+
+                <TextView
+                    android:id="@+id/tv_s8_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/pretendard_regular"
+                    android:text="대한 "
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_s8_8"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_s8_4" />
+
+                <TextView
+                    android:id="@+id/tv_s8_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/pretendard_bold"
+                    android:text="최종 권고문"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_s8_9"
+                    app:layout_constraintStart_toEndOf="@+id/tv_s8_7"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_s8_5" />
+
+                <TextView
+                    android:id="@+id/tv_s8_9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/pretendard_regular"
+                    android:text="을 발표했습니다."
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tv_s8_8"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_s8_6" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:id="@+id/sign4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/sign4"
+                app:layout_constraintTop_toBottomOf="@id/cl_sign3" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
