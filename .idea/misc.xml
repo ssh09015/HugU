@@ -9,17 +9,28 @@
         <entry key="..\:/AndroidStudioProjects/HugU/app/src/main/res/drawable/shape_for_circle_button.xml" value="0.132" />
         <entry key="..\:/AndroidStudioProjects/HugU/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/AndroidStudioProjects/HugU/app/src/main/res/layout/fragment_comm.xml" value="0.17916666666666667" />
-        <entry key="..\:/AndroidStudioProjects/HugU/app/src/main/res/layout/fragment_help.xml" value="0.16666666666666666" />
+        <entry key="..\:/AndroidStudioProjects/HugU/app/src/main/res/layout/fragment_help.xml" value="0.10526315789473684" />
         <entry key="..\:/AndroidStudioProjects/HugU/app/src/main/res/layout/fragment_help_rank.xml" value="0.16666666666666666" />
         <entry key="..\:/AndroidStudioProjects/HugU/app/src/main/res/layout/fragment_help_support.xml" value="0.22" />
         <entry key="..\:/AndroidStudioProjects/HugU/app/src/main/res/layout/fragment_home.xml" value="0.17916666666666667" />
+        <entry key="..\:/AndroidStudioProjects/HugU/app/src/main/res/layout/fragment_home2.xml" value="0.3333333333333333" />
+        <entry key="..\:/AndroidStudioProjects/HugU/app/src/main/res/layout/fragment_home_campaign.xml" value="0.17916666666666667" />
+        <entry key="..\:/AndroidStudioProjects/HugU/app/src/main/res/layout/fragment_home_campaign_tip.xml" value="0.17916666666666667" />
+        <entry key="..\:/AndroidStudioProjects/HugU/app/src/main/res/layout/fragment_home_campaign_tip2.xml" value="0.17916666666666667" />
+        <entry key="..\:/AndroidStudioProjects/HugU/app/src/main/res/layout/fragment_home_quiz.xml" value="0.17916666666666667" />
+        <entry key="..\:/AndroidStudioProjects/HugU/app/src/main/res/layout/fragment_home_quiz_easy.xml" value="0.17916666666666667" />
+        <entry key="..\:/AndroidStudioProjects/HugU/app/src/main/res/layout/fragment_home_quiz_end_easy.xml" value="0.17916666666666667" />
+        <entry key="..\:/AndroidStudioProjects/HugU/app/src/main/res/layout/fragment_home_quiz_hard.xml" value="0.17916666666666667" />
+        <entry key="..\:/AndroidStudioProjects/HugU/app/src/main/res/layout/fragment_home_quiz_normal.xml" value="0.17916666666666667" />
+        <entry key="..\:/AndroidStudioProjects/HugU/app/src/main/res/layout/fragment_home_quiz_scene3.xml" value="0.17916666666666667" />
+        <entry key="..\:/AndroidStudioProjects/HugU/app/src/main/res/layout/fragment_home_webtoon.xml" value="0.17916666666666667" />
         <entry key="..\:/AndroidStudioProjects/HugU/app/src/main/res/layout/fragment_page.xml" value="0.17916666666666667" />
         <entry key="..\:/AndroidStudioProjects/HugU/app/src/main/res/menu/menu_navi.xml" value="0.17916666666666667" />
         <entry key="..\:/AndroidStudioProjects/HugU/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1195" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

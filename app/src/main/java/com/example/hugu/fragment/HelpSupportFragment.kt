@@ -1,11 +1,18 @@
 package com.example.hugu.fragment
 
+import android.content.ActivityNotFoundException
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import com.example.hugu.R
+import com.example.hugu.databinding.FragmentHelpRankBinding
+import com.example.hugu.databinding.FragmentHelpSupportBinding
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -22,6 +29,7 @@ class HelpSupportFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
+    private lateinit var viewbinding:FragmentHelpSupportBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -35,8 +43,24 @@ class HelpSupportFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_help_support, container, false)
+        viewbinding = FragmentHelpSupportBinding.inflate(inflater, container, false)
+        viewbinding.shareButton.setOnClickListener {
+            try {
+                val sendText = "https://bit.ly/3Lvjb1g"
+                val sendIntent = Intent()
+                sendIntent.action = Intent.ACTION_SEND
+                sendIntent.putExtra(Intent.EXTRA_TEXT, sendText)
+                sendIntent.type = "text/plain"
+                startActivity(Intent.createChooser(sendIntent, "Share"))
+            } catch (ignored: ActivityNotFoundException) {
+                Log.d("test", "ignored : $ignored")
+            }
+        }
+        viewbinding.join.setOnClickListener {
+            var intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://bit.ly/3Lvjb1g"))
+            startActivity(intent)
+        }
+        return viewbinding.root
     }
 
     companion object {
