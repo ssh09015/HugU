@@ -739,6 +739,641 @@
                 android:src="@drawable/sign4"
                 app:layout_constraintTop_toBottomOf="@id/cl_sign3" />
 
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_sign4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="#33C4C4C5"
+                app:layout_constraintTop_toBottomOf="@+id/sign4">
+
+                <TextView
+                    android:id="@+id/tv_s9_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="유엔 아동권리협약?"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/pretendard_bold"
+                    android:textColor="#444444"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <TextView
+                    android:id="@+id/tv_s9_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/pretendard_regular"
+                    android:text="전 세계의 모든 어린이의 생존, 보호, 발달, 참여의 권리를 담은 국제적"
+                    android:textColor="#444444"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_s9_1"/>
+
+                <TextView
+                    android:id="@+id/tv_s9_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/pretendard_regular"
+                    android:text="약속으로, 한국은 1991년부터 당사국으로 참여하고 있습니다."
+                    android:textColor="#444444"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_s9_2"/>
+
+                <TextView
+                    android:id="@+id/tv_s9_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="24dp"
+                    android:fontFamily="@font/pretendard_regular"
+                    android:text="* 세움이 진행하는 수용자 자녀의 인권옹호 활동은 ‘유엔아동권리협약’을 근거로 합니다."
+                    android:textColor="#444444"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_s9_3"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_sign5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/cl_sign4">
+
+                <TextView
+                    android:id="@+id/tv_s10_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36dp"
+                    android:fontFamily="@font/pretendard_regular"
+                    android:text="그 문서에는 ‘"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_s10_2"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_s10_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36dp"
+                    android:fontFamily="@font/pretendard_bold"
+                    android:text="수용자 자녀"
+                    android:textAlignment="center"
+                    android:textColor="@color/seum2"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_s10_3"
+                    app:layout_constraintStart_toEndOf="@+id/tv_s10_1"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_s10_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36dp"
+                    android:fontFamily="@font/pretendard_regular"
+                    android:text="’에 대한 "
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_s10_4"
+                    app:layout_constraintStart_toEndOf="@+id/tv_s10_2"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_s10_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36dp"
+                    android:fontFamily="@font/pretendard_bold"
+                    android:text="권리보호 조치의"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tv_s10_3"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_s10_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/pretendard_bold"
+                    android:text="중요성"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_s10_6"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_s10_2" />
+
+                <TextView
+                    android:id="@+id/tv_s10_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/pretendard_regular"
+                    android:text="이 구체적으로 언급되어 있습니다."
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tv_s10_5"
+                    app:layout_constraintTop_toBottomOf="@id/tv_s10_2" />
+
+                <TextView
+                    android:id="@+id/tv_s11_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="한국은 해당 권고사항데 대한 이행현황을"
+                    android:fontFamily="@font/pretendard_regular"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_s10_5"/>
+
+                <TextView
+                    android:id="@+id/tv_s11_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/pretendard_bold"
+                    android:text="2024년 12월"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_s11_3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_s11_1" />
+
+                <TextView
+                    android:id="@+id/tv_s11_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/pretendard_regular"
+                    android:text="까지 "
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_s11_4"
+                    app:layout_constraintStart_toEndOf="@+id/tv_s11_2"
+                    app:layout_constraintTop_toBottomOf="@id/tv_s11_1" />
+
+                <TextView
+                    android:id="@+id/tv_s11_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/pretendard_bold"
+                    android:text="제 7차 국가보고서"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_s11_5"
+                    app:layout_constraintStart_toEndOf="@+id/tv_s11_3"
+                    app:layout_constraintTop_toBottomOf="@id/tv_s11_1" />
+
+                <TextView
+                    android:id="@+id/tv_s11_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/pretendard_regular"
+                    android:text="를 통해"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tv_s11_4"
+                    app:layout_constraintTop_toBottomOf="@id/tv_s11_1" />
+
+                <TextView
+                    android:id="@+id/tv_s11_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="증명해야 합니다."
+                    android:fontFamily="@font/pretendard_regular"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_s11_5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <ImageView
+                    android:id="@+id/iv_sign5"
+                    android:layout_width="match_parent"
+                    android:layout_height="225dp"
+                    android:layout_marginTop="60dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sign5"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_s11_6" />
+
+                <TextView
+                    android:id="@+id/tv_s12_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="121dp"
+                    android:layout_marginEnd="30dp"
+                    android:fontFamily="@font/pretendard_bold"
+                    android:text="보고를 1년 앞둔 지금,"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    app:layout_constraintBottom_toTopOf="@+id/tv_s12_2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/iv_sign5"
+                    app:layout_constraintVertical_chainStyle="packed" />
+
+                <TextView
+                    android:id="@+id/tv_s12_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:fontFamily="@font/pretendard_bold"
+                    android:text="우리 사회는?"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/iv_sign5"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_s12_1" />
+
+                <TextView
+                    android:id="@+id/tv_s12_3"
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="33dp"
+                    android:fontFamily="@font/pretendard_bold"
+                    android:gravity="left"
+                    android:text="UN 아동권리위원회의 권고 후,\n우리 사회는 수용자 자녀를 위해 얼마나 변화했을까요?"
+                    android:textColor="@color/seum2"
+                    android:textSize="18sp"
+                    app:layout_constraintTop_toBottomOf="@+id/iv_sign5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_p1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/back_round_gray"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cl_sign5">
+
+                <TextView
+                    android:id="@+id/tv_p1"
+                    android:layout_width="43dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:gravity="center_vertical"
+                    android:rotation="-90.0"
+                    android:text="2020"
+                    android:textSize="14sp"
+                    android:textColor="@color/seum2"
+                    android:fontFamily="@font/pretendard_bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <TextView
+                    android:id="@+id/tv_p1_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="3dp"
+                    android:fontFamily="@font/pretendard_regular"
+                    android:text="한정애 의원실에서 "
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_p1_2"
+                    app:layout_constraintStart_toEndOf="@+id/tv_p1"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:id="@+id/tv_p1_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/pretendard_bold"
+                    android:text="수용자자녀 보호 3법"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_p1_3"
+                    app:layout_constraintStart_toEndOf="@+id/tv_p1_1"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_p1_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/pretendard_regular"
+                    android:text="을"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toEndOf="@+id/tv_p1_2"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_p1_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="3dp"
+                    android:fontFamily="@font/pretendard_regular"
+                    android:text="개정발의하여 국회 상임위에 계류 중"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tv_p1"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_p1_2"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_p2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/back_round_gray"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cl_p1">
+
+                <TextView
+                    android:id="@+id/tv_p2"
+                    android:layout_width="43dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:gravity="center_vertical"
+                    android:rotation="-90.0"
+                    android:text="2021"
+                    android:textSize="14sp"
+                    android:textColor="@color/seum2"
+                    android:fontFamily="@font/pretendard_bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <TextView
+                    android:id="@+id/tv_p2_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="3dp"
+                    android:fontFamily="@font/pretendard_regular"
+                    android:text="아동을 위한 "
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_p2_2"
+                    app:layout_constraintStart_toEndOf="@+id/tv_p2"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:id="@+id/tv_p2_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/pretendard_bold"
+                    android:text="아동친화적 가족접견실"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_p2_3"
+                    app:layout_constraintStart_toEndOf="@+id/tv_p2_1"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_p2_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/pretendard_regular"
+                    android:text="이"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toEndOf="@+id/tv_p2_2"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_p2_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="3dp"
+                    android:fontFamily="@font/pretendard_regular"
+                    android:text="전국 53개 교정시설에 설치 완료"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toEndOf="@+id/tv_p2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_p2_2"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_p3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/back_round_gray"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cl_p2">
+
+                <TextView
+                    android:id="@+id/tv_p3"
+                    android:layout_width="43dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:gravity="center_vertical"
+                    android:rotation="-90.0"
+                    android:text="2022"
+                    android:textSize="14sp"
+                    android:textColor="@color/seum2"
+                    android:fontFamily="@font/pretendard_bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <TextView
+                    android:id="@+id/tv_p3_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="3dp"
+                    android:fontFamily="@font/pretendard_regular"
+                    android:text="4개의 지방교정청 "
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_p3_2"
+                    app:layout_constraintStart_toEndOf="@+id/tv_p3"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:id="@+id/tv_p3_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/pretendard_bold"
+                    android:text="위기수용자자녀 지원팀"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_p3_3"
+                    app:layout_constraintStart_toEndOf="@+id/tv_p3_1"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_p3_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/pretendard_regular"
+                    android:text="이"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toEndOf="@+id/tv_p3_2"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_p3_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="3dp"
+                    android:fontFamily="@font/pretendard_regular"
+                    android:text="운영되기 시작함"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toEndOf="@+id/tv_p3"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_p3_2"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/tv_s13_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="33dp"
+                android:text="하지만 기본권조차 보장받지 못하고 있는 \n수용자 자녀들이 있기에 더 많은 변화가 필요합니다."
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/pretendard_regular"
+                app:layout_constraintTop_toBottomOf="@+id/cl_p3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/tv_s13_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="* 유엔아동권리협약 4대 기본권 : 생존권, 보호권, 발달권, 참여권"
+                android:textSize="10sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/pretendard_regular"
+                app:layout_constraintTop_toBottomOf="@+id/tv_s13_1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_sign6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/back_orange"
+                android:layout_marginTop="33dp"
+                app:layout_constraintTop_toBottomOf="@+id/tv_s13_2">
+
+                <TextView
+                    android:id="@+id/tv_s14_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="수용자 자녀들이 더 이상 숨지 않고"
+                    android:textColor="@color/seum2"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/pretendard_bold"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_s14_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="세상 앞에 당당하게 설 수 있도록"
+                    android:textColor="@color/seum2"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/pretendard_bold"
+                    app:layout_constraintTop_toBottomOf="@id/tv_s14_1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_s14_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="24dp"
+                    android:text="우리가 함께 관심을 가지고 들여다 봐야 할 때입니다."
+                    android:textColor="@color/seum2"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/pretendard_bold"
+                    app:layout_constraintTop_toBottomOf="@id/tv_s14_2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.core.widget.NestedScrollView>
