@@ -1,5 +1,6 @@
 package com.example.hugu.fragment
 
+import android.app.Activity
 import android.app.Dialog
 import android.content.Context
 import android.graphics.Color
@@ -15,23 +16,13 @@ import android.view.Window
 import android.widget.ImageView
 import androidx.annotation.RequiresApi
 import androidx.viewpager2.widget.ViewPager2
+import com.example.hugu.MainActivity
 import com.example.hugu.R
 import com.example.hugu.adapter.PagerFragmentStateAdapter
 import com.example.hugu.databinding.FragmentHomeBinding
 import com.example.hugu.databinding.FragmentHomeCampaignBinding
-import com.example.hugu.databinding.FragmentHomeQuizBinding
-import com.google.android.material.tabs.TabLayoutMediator
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
 
-/**
- * A simple [Fragment] subclass.
- * Use the [HomeCampaignFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class HomeCampaignFragment : Fragment() {
     lateinit var viewbinding: FragmentHomeCampaignBinding
     lateinit var viewbinding2: FragmentHomeBinding
@@ -42,6 +33,7 @@ class HomeCampaignFragment : Fragment() {
     ): View? {
         viewbinding = FragmentHomeCampaignBinding.inflate(inflater, container, false)
         viewbinding2 = FragmentHomeBinding.inflate(inflater, container, false)
+
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_home_campaign, container, false)
     }
@@ -62,10 +54,13 @@ class HomeCampaignFragment : Fragment() {
         pagerAdapter.addFragment(HomeCampaignTipFragment())
         viewPager.adapter=pagerAdapter
 
+        val activity = activity as MainActivity
+
         tip_option.setOnClickListener {
             var current = viewPager.currentItem
             Log.e("Click!!!!!!!!!", "Page ${current}")
             viewPager.setCurrentItem(1, false)
+            activity.changeFragment(1)
         }
         viewPager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
             override fun onPageSelected(position: Int) {
@@ -74,6 +69,7 @@ class HomeCampaignFragment : Fragment() {
                 //왜 바뀌지는 않지?? ->여기 다시 보기
             }
         })
+
     }
     fun showDialog2(context: Context) {
         val dialog1 = Dialog(context)

@@ -4,10 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.hugu.databinding.ActivityMainBinding
-import com.example.hugu.fragment.CommFragment
-import com.example.hugu.fragment.HelpFragment
-import com.example.hugu.fragment.HomeFragment
-import com.example.hugu.fragment.PageFragment
+import com.example.hugu.fragment.*
 
 class MainActivity : AppCompatActivity() {
     lateinit var viewBinding: ActivityMainBinding
@@ -54,6 +51,21 @@ class MainActivity : AppCompatActivity() {
                         .commitAllowingStateLoss()
                     return@setOnItemSelectedListener true
                 }
+            }
+        }
+    }
+
+    fun changeFragment(index: Int) {
+        when (index) {
+            1 -> {
+                supportFragmentManager.beginTransaction()
+                    .replace(R.id.fl_con, HomeCampaignTipFragment())
+                    .commitAllowingStateLoss()
+            }
+            else -> {
+                supportFragmentManager.beginTransaction()
+                    .replace(R.id.fl_con, HomeFragment())
+                    .commitAllowingStateLoss()
             }
         }
     }
