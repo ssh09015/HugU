@@ -1,165 +1,234 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/easyQuiz"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.HomeQuizFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
         <LinearLayout
-            android:layout_width="match_parent"
+            android:id="@+id/linearLayout4"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            app:layout_constraintEnd_toStartOf="@+id/guideline5"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toTopOf="@+id/guideline2">
+
             <ImageView
                 android:id="@+id/hug_u"
-                android:text="HUG U"
-                android:textSize="20dp"
-                android:includeFontPadding="false"
-                android:layout_width="37dp"
-                android:layout_height="22dp"
-                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginBottom="14dp"
+                android:layout_weight="1"
                 android:gravity="center_vertical"
-                android:src="@drawable/home_title_hug_u"
-                android:layout_weight="1" />
-            <FrameLayout
+                android:includeFontPadding="false"
+                android:src="@drawable/hug_smile" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:layout_constraintEnd_toStartOf="@+id/guideline5"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/home_quiz_easy_bar"></ImageView>
+
+            <TextView
+                android:id="@+id/difficulty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="21dp"
+                android:text="easy"
+                android:textSize="14dp"
+                android:fontFamily="@font/pretendard_extrabold">
+            </TextView>
+
+            <TextView
+                android:id="@+id/quiz_num"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1">
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="21.4dp"
-                    android:src="@drawable/home_quiz_easy_bar">
-                </ImageView>
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center|left"
-                    android:layout_marginLeft="42dp"
-
-                    android:src="@drawable/home_quiz_hard_word"></ImageView>
-
-                <TextView
-                    android:id="@+id/difficulty"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:includeFontPadding="false"
-                    android:textSize="14dp"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:fontFamily="@font/pretendard_extrabold"
-                    android:textColor="@color/black"
-                    android:layout_weight="1"
-                    android:text="Q.1">
-                </TextView>
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center|right"
-                    android:layout_marginRight="29dp"
-                    android:src="@drawable/home_quiz_out">
-                </ImageView>
-            </FrameLayout>
-
-            <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="21.5dp">
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:src="@drawable/home_quiz_long_line"></ImageView>
-                <LinearLayout
-                    android:layout_width="320dp"
-                    android:layout_gravity="center"
-                    android:layout_height="wrap_content">
-                    <ImageView
-                        android:id="@+id/line1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:src="@drawable/home_quiz_line"></ImageView>
-                    <ImageView
-                        android:id="@+id/line2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:src="@drawable/home_quiz_line"
-                        android:visibility="invisible"></ImageView>
-                    <ImageView
-                        android:id="@+id/line3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:src="@drawable/home_quiz_line"
-                        android:visibility="invisible"></ImageView>
-                    <ImageView
-                        android:id="@+id/line4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:src="@drawable/home_quiz_line"
-                        android:visibility="invisible"></ImageView>
-                    <ImageView
-                        android:id="@+id/line5"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:src="@drawable/home_quiz_line"
-                        android:visibility="invisible"></ImageView>
-                    <ImageView
-                        android:id="@+id/line6"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:src="@drawable/home_quiz_line"
-                        android:visibility="invisible"></ImageView>
-                </LinearLayout>
-            </FrameLayout>
-            <TextView
-                android:id="@+id/easy_body"
-                android:layout_width="match_parent"
-                android:layout_height="239dp"
-                android:layout_marginTop="72dp"
-                android:gravity="center|top"
+                android:layout_gravity="center"
                 android:layout_weight="1"
-                android:text="2017년 기준,\n\n수용자 자녀는 10%으로\n\n약 5만 4천명이다"
-                android:textSize="20dp"></TextView>
+                android:fontFamily="@font/pretendard_extrabold"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="Q.1"
+                android:textColor="@color/black"
+                android:textSize="14dp"></TextView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|right"
+                android:src="@drawable/home_quiz_out"></ImageView>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frameLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline5"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/frameLayout">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/home_quiz_long_line"></ImageView>
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="320dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_weight="1"
-                android:layout_marginRight="20dp"
-                android:orientation="horizontal">
+                android:layout_gravity="center">
+
                 <ImageView
-                    android:id="@+id/whitecorrect"
-                    android:layout_width="144dp"
-                    android:layout_height="95dp"
-                    android:adjustViewBounds="true"
+                    android:id="@+id/line1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:src="@drawable/home_quiz_correct_btn">
-                </ImageView>
+                    android:src="@drawable/home_quiz_line"></ImageView>
+
                 <ImageView
-                    android:id="@+id/whitewrong"
-                    android:layout_width="144dp"
-                    android:layout_height="95dp"
-                    android:adjustViewBounds="true"
+                    android:id="@+id/line2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:src="@drawable/home_quiz_wrong_btn">
-                </ImageView>
+                    android:src="@drawable/home_quiz_line"
+                    android:visibility="invisible"></ImageView>
+
+                <ImageView
+                    android:id="@+id/line3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/home_quiz_line"
+                    android:visibility="invisible"></ImageView>
+
+                <ImageView
+                    android:id="@+id/line4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/home_quiz_line"
+                    android:visibility="invisible"></ImageView>
+
+                <ImageView
+                    android:id="@+id/line5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/home_quiz_line"
+                    android:visibility="invisible"></ImageView>
+
+                <ImageView
+                    android:id="@+id/line6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/home_quiz_line"
+                    android:visibility="invisible"></ImageView>
             </LinearLayout>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/easy_body"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="2017년 기준,\n\n수용자 자녀는 10%으로\n\n약 5만 4천명이다"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+            app:layout_constraintEnd_toStartOf="@+id/guideline5"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/frameLayout2"></TextView>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintStart_toStartOf="@+id/guideline1"
+            app:layout_constraintTop_toBottomOf="@+id/easy_body">
+
             <ImageView
-                android:id="@+id/checkans_easy"
-                android:layout_width="300dp"
-                android:layout_height="50dp"
+                android:id="@+id/whitecorrect"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:layout_weight="1"
                 android:adjustViewBounds="true"
-                android:layout_marginTop="24dp"
-                android:layout_gravity="center"
-                android:src="@drawable/home_quiz_check_answer">
-            </ImageView>
+                android:src="@drawable/home_quiz_correct_btn"></ImageView>
+
+            <ImageView
+                android:id="@+id/whitewrong"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:src="@drawable/home_quiz_wrong_btn"></ImageView>
         </LinearLayout>
+
+        <ImageView
+            android:id="@+id/checkans_easy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/home_quiz_check_answer"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintStart_toStartOf="@+id/guideline1"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3"></ImageView>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05"/>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.075"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.05"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.925"/>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

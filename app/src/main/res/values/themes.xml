@@ -14,9 +14,11 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
         <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="NewDialog">
+        <item name="android:windowBackground">@android:color/darker_gray</item>
+        <item name="background">@android:color/darker_gray</item>
     </style>
     <style name="tabTextSizeBold" parent="TextAppearance.Design.Tab">
         <item name="android:textSize">20sp</item>
