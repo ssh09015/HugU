@@ -1,5 +1,6 @@
 package com.example.hugu.fragment
 
+import android.content.Context
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -11,6 +12,7 @@ import androidx.fragment.app.Fragment
 import androidx.viewbinding.ViewBindings
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import androidx.viewpager2.widget.ViewPager2
+import com.example.hugu.MainActivity
 import com.example.hugu.R
 import com.example.hugu.adapter.PagerFragmentStateAdapter
 import com.example.hugu.databinding.FragmentHelpBinding
@@ -25,12 +27,14 @@ class HomeFragment : Fragment() {
     lateinit var viewbinding: FragmentHomeBinding
     lateinit var viewbinding_Campaign: FragmentHomeCampaignBinding
 
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
 
     ): View? {
         viewbinding = FragmentHomeBinding.inflate(inflater, container, false)
+
         return viewbinding.root
     }
 
@@ -59,6 +63,8 @@ class HomeFragment : Fragment() {
                 2-> tab.text="웹툰"
             }
         }.attach()
+
+
         /*tip.setOnClickListener {
             var current = viewbinding.viewPager.currentItem
             Log.e("Click!!!!!!!!!", "Page ${1}")
