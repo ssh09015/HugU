@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".fragment.HelpSupportFragment">
+    tools:context=".fragment.HelpRankFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/ns_sign"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btn_join"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/linearLayout"
@@ -275,5 +284,21 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
+    </androidx.core.widget.NestedScrollView>
 
-</ScrollView>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_join"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="서명운동 참여하기"
+        android:paddingLeft="130dp"
+        android:gravity="center|left"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:fontFamily="@font/pretendard_bold"
+        android:drawableLeft="@drawable/sign_pencil"
+        android:drawablePadding="15dp"
+        android:background="@drawable/btn_round"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
