@@ -75,16 +75,19 @@
                     android:src="@drawable/home_quiz_easy_bar">
                 </ImageView>
 
-                <ImageView
+                <TextView
+                    android:id="@+id/difficulty"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center|left"
                     android:layout_marginLeft="42dp"
-
-                    android:src="@drawable/home_quiz_hard_word"></ImageView>
+                    android:text="noraml"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/pretendard_extrabold">
+                </TextView>
 
                 <TextView
-                    android:id="@+id/difficulty"
+                    android:id="@+id/quiz_num"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:includeFontPadding="false"
@@ -103,54 +106,81 @@
                     android:src="@drawable/home_quiz_out">
                 </ImageView>
             </FrameLayout>
-            <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            <FrameLayout
+                android:id="@+id/frameLayout2"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="21.5dp">
-            <ImageView
-                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:src="@drawable/home_quiz_long_line"></ImageView>
-            <LinearLayout
-                android:layout_width="320dp"
-                android:layout_gravity="center"
-                android:layout_height="wrap_content">
+                android:layout_marginTop="15dp">
+
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:src="@drawable/home_quiz_line"></ImageView>
-                <ImageView
-                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/home_quiz_long_line"></ImageView>
+
+                <LinearLayout
+                    android:layout_width="320dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:src="@drawable/home_quiz_line"
-                    android:visibility="invisible"></ImageView>
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="100dp"
-                    android:layout_weight="1"
-                    android:src="@drawable/home_quiz_line"
-                    android:visibility="invisible"></ImageView>
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="100dp"
-                    android:layout_weight="1"
-                    android:src="@drawable/home_quiz_line"
-                    android:visibility="invisible"></ImageView>
-            </LinearLayout>
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:id="@+id/line1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/home_quiz_line"></ImageView>
+
+                    <ImageView
+                        android:id="@+id/line2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/home_quiz_line"
+                        android:visibility="invisible"></ImageView>
+
+                    <ImageView
+                        android:id="@+id/line3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/home_quiz_line"
+                        android:visibility="invisible"></ImageView>
+
+                    <ImageView
+                        android:id="@+id/line4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/home_quiz_line"
+                        android:visibility="invisible"></ImageView>
+
+                    <ImageView
+                        android:id="@+id/line5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/home_quiz_line"
+                        android:visibility="invisible"></ImageView>
+
+                    <ImageView
+                        android:id="@+id/line6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/home_quiz_line"
+                        android:visibility="invisible"></ImageView>
+                </LinearLayout>
             </FrameLayout>
             <TextView
-                android:text="수용자의 자녀와 가족을 세상의 중심에\n세우고 함께 걸아가기 위해 설립된\n아동복지 전문 단체의 이름은?"
-                android:textSize="20dp"
+                android:id="@+id/normal_body"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="72dp"
                 android:gravity="center"
-                android:layout_marginTop="72dp">
-            </TextView>
+                android:fontFamily="@font/pretendard_bold"
+                android:textColor="@color/black"
+                android:text="수용자의 자녀와 가족을 세상의 중심에\n\n세우고 함께 걸아가기 위해 설립된\n\n아동복지 전문 단체의 이름은?"
+                android:textSize="20dp"></TextView>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -210,6 +240,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="21dp"
+                android:layout_marginBottom="26dp"
                 android:src="@drawable/home_quiz_checkans"
                 android:visibility="gone">
             </ImageView>

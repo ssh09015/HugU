@@ -145,13 +145,11 @@
         </FrameLayout>
 
         <TextView
-            android:id="@+id/hard_body"
+            android:id="@+id/easy_body"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:gravity="center"
-            android:fontFamily="@font/pretendard_bold"
-            android:textColor="@color/black"
-            android:text="수용자의 자녀와 가족을 세상의 중심에\n\n세우고 함께 걸아가기 위해 설립된\n\n아동복지 전문 단체의 이름은?"
+            android:text="2017년 기준,\n\n수용자 자녀는 10%으로\n\n약 5만 4천명이다"
             android:textSize="20dp"
             app:layout_constraintBottom_toTopOf="@+id/one"
             app:layout_constraintEnd_toStartOf="@+id/guideline5"
@@ -165,7 +163,7 @@
             app:layout_constraintBottom_toTopOf="@+id/second_option"
             app:layout_constraintEnd_toStartOf="@+id/guideline4"
             app:layout_constraintStart_toStartOf="@+id/guideline1"
-            app:layout_constraintTop_toBottomOf="@+id/hard_body">
+            app:layout_constraintTop_toBottomOf="@+id/easy_body">
             <TextView
                 android:id="@+id/first_option"
                 android:layout_width="match_parent"

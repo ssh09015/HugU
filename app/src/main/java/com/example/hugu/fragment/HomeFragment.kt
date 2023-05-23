@@ -15,6 +15,7 @@ import com.example.hugu.R
 import com.example.hugu.adapter.PagerFragmentStateAdapter
 import com.example.hugu.databinding.FragmentHelpBinding
 import com.example.hugu.databinding.FragmentHomeBinding
+import com.example.hugu.databinding.FragmentHomeCampaignBinding
 import com.example.hugu.databinding.FragmentHomeQuizBinding
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
@@ -22,7 +23,7 @@ import com.google.android.material.tabs.TabLayoutMediator
 
 class HomeFragment : Fragment() {
     lateinit var viewbinding: FragmentHomeBinding
-    lateinit var viewbinding_Quiz: FragmentHomeQuizBinding
+    lateinit var viewbinding_Campaign: FragmentHomeCampaignBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -41,7 +42,6 @@ class HomeFragment : Fragment() {
         pagerAdapter.addFragment(HomeWebtoonFragment())
         pagerAdapter.addFragment(HomeCampaignTipFragment())
         viewbinding.viewPager.adapter=pagerAdapter
-
         //val otherLayout = LayoutInflater.from(context).inflate(R.layout.fragment_home_campaign, null)
         //var tip = otherLayout.findViewById<ImageView>(R.id.tip)
 
