@@ -2,16 +2,19 @@ package com.example.hugu.fragment
 
 import android.content.ActivityNotFoundException
 import android.content.Intent
+import android.graphics.Rect
 import android.net.Uri
+import android.os.Build
 import android.os.Bundle
 import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
-import com.example.hugu.R
-import com.example.hugu.databinding.FragmentHelpRankBinding
+import androidx.annotation.RequiresApi
+import androidx.core.view.isInvisible
+import androidx.core.view.isVisible
+import androidx.core.widget.NestedScrollView
+import androidx.fragment.app.Fragment
 import com.example.hugu.databinding.FragmentHelpSupportBinding
 
 // TODO: Rename parameter arguments, choose names that match
@@ -39,10 +42,12 @@ class HelpSupportFragment : Fragment() {
         }
     }
 
+    @RequiresApi(Build.VERSION_CODES.M)
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
         viewbinding = FragmentHelpSupportBinding.inflate(inflater, container, false)
         viewbinding.shareButton.setOnClickListener {
             try {
@@ -60,10 +65,28 @@ class HelpSupportFragment : Fragment() {
             var intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://bit.ly/3Lvjb1g"))
             startActivity(intent)
         }
+        setupStickyFooter()
         return viewbinding.root
     }
 
+    @RequiresApi(Build.VERSION_CODES.M)
+    private fun setupStickyFooter(){
+        viewbinding.clBtnJoin.isInvisible=viewbinding.nsSign.isViewVisible(viewbinding.clBtnJoin)==false
+        viewbinding.nsSign.setOnScrollChangeListener { _, _, _, _, _ ->
+            viewbinding.clBtnJoin.isInvisible=viewbinding.nsSign.isViewVisible(viewbinding.clBtnJoin)==false
+            viewbinding.clJoin.isVisible = viewbinding.nsSign.isViewVisible(viewbinding.clBtnJoin) == false
+
+        }
+    }
+
     companion object {
+        fun NestedScrollView.isViewVisible(view: View): Boolean {
+            val scrollBounds = Rect()
+            this.getDrawingRect(scrollBounds)
+            val top = view.y
+            val bottom = view.height + top
+            return scrollBounds.bottom > bottom
+        }
         /**
          * Use this factory method to create a new instance of
          * this fragment using the provided parameters.

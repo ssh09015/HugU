@@ -10,9 +10,8 @@
         android:id="@+id/ns_sign"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/btn_join"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -91,26 +90,36 @@
                     android:gravity="center"
                     android:text="가장 작기에 절실한 0.5% 아이들이\n당당하게 서는 세상을 위해 마음을 보태주세요."
                     android:textColor="@color/black"
-                    android:textSize="15dp"
+                    android:textSize="17dp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/join" />
+                    app:layout_constraintTop_toBottomOf="@+id/cl_join" />
 
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/join"
-                    android:layout_width="360dp"
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_join"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:background="@drawable/shape_for_button"
-                    android:text="♡ 세움 후원하기"
-                    android:textColor="@color/white"
-                    android:textSize="16dp"
-                    android:textStyle="bold"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView" />
+                    app:layout_constraintEnd_toEndOf="@+id/imageView"
+                    app:layout_constraintStart_toStartOf="@+id/imageView"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/join"
+                        android:layout_width="360dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_for_button"
+                        android:text="♡ 세움 후원하기"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -167,6 +176,7 @@
                     android:id="@+id/textView6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
                     android:text="작은 돈이지만 아이들에게는\n마술램프와 같은 감동이 됩니다.\n\n아이들이 친구들과 간식을 사 먹는 용돈,\n학교 오가는 교통비 등으로 사용됩니다.\n\n아이들에게 일상의 작은 기쁨을 선물해 주세요."
                     android:textColor="@color/black"
                     android:textSize="18dp"
@@ -220,8 +230,8 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="410dp"
-                android:layout_height="973dp"
+                android:layout_width="427dp"
+                android:layout_height="937dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -255,7 +265,6 @@
                     android:id="@+id/textView10"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="30dp"
                     android:gravity="center"
                     android:text="가장 작기에 절실한 0.5% 수용자 자녀가\n건강하게 성장하고 그들의 인권을 보호하는 일에 사용됩니다."
                     android:textColor="@color/black"
@@ -270,7 +279,7 @@
                     android:id="@+id/textView11"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="130dp"
+                    android:layout_marginBottom="80dp"
                     android:gravity="center"
                     android:text="아이들의 든든한 버팀목이 되어주세요."
                     android:textColor="#FF5100"
@@ -286,19 +295,34 @@
 
     </androidx.core.widget.NestedScrollView>
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_join"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_btn_join"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:text="서명운동 참여하기"
-        android:paddingLeft="130dp"
-        android:gravity="center|left"
-        android:textColor="@color/white"
-        android:textSize="14sp"
-        android:fontFamily="@font/pretendard_bold"
-        android:drawableLeft="@drawable/sign_pencil"
-        android:drawablePadding="15dp"
-        android:background="@drawable/btn_round"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/ns_sign"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_join"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_round2"
+            android:drawableLeft="@drawable/sign_heart"
+            android:drawablePadding="15dp"
+            android:fontFamily="@font/pretendard_bold"
+            android:gravity="center|left"
+            android:paddingLeft="130dp"
+            android:text="서명운동 참여하기"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
