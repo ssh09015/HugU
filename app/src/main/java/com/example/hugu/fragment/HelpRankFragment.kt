@@ -62,7 +62,7 @@ class HelpRankFragment : Fragment(){
         viewbinding.clName.isInvisible=viewbinding.nsSign.isViewVisible(viewbinding.clName)==false
         viewbinding.nsSign.setOnScrollChangeListener { _, _, _, _, _ ->
             viewbinding.clName.isInvisible=viewbinding.nsSign.isViewVisible(viewbinding.clName)==false
-            viewbinding.clBtnShare.isVisible = viewbinding.nsSign.isViewVisible(viewbinding.clBtnShare) == false
+            viewbinding.clBtnShare.isVisible = viewbinding.nsSign.isViewVisible(viewbinding.clName) == false
         }
     }
 
