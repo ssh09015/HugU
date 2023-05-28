@@ -65,6 +65,11 @@ class HelpSupportFragment : Fragment() {
             var intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://bit.ly/3Lvjb1g"))
             startActivity(intent)
         }
+
+        viewbinding.btnJoin.setOnClickListener {
+            var intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://bit.ly/3Lvjb1g"))
+            startActivity(intent)
+        }
         setupStickyFooter()
         return viewbinding.root
     }
