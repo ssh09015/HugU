@@ -43,7 +43,7 @@
 
             <com.google.android.material.tabs.TabLayout
                 android:id="@+id/tabLayout"
-                android:layout_width="240dp"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/pretendard_black"
                 android:theme="@style/TabTheme"
