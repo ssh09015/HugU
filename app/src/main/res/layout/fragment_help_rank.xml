@@ -11,7 +11,6 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/btn_join"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -22,36 +21,123 @@
             <TextView
                 android:id="@+id/tv_notice"
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginLeft="20dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
                 android:gravity="center|left"
                 android:text="📢 서명운동 참여로 수용자 자녀들에게 힘이 되어주세요!"
-                android:textSize="12sp"
-                android:textColor="@color/font_gray"
-                android:fontFamily="@font/pretendard_regular"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toTopOf="@+id/cl_sign1"/>
+                android:textSize="14dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/cl_roundchart"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_roundchart"
+                android:layout_width="match_parent"
+                android:layout_height="367dp"
+                app:layout_constraintBottom_toTopOf="@+id/cl_btn_share"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_notice">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/roundchart"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_btn_share"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:background="@color/white"
+                app:layout_constraintBottom_toTopOf="@+id/cl_ranking"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cl_roundchart">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/rank_join"
+                    android:layout_width="300dp"
+                    android:layout_height="58dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/shape_for_button2"
+                    android:drawableLeft="@drawable/sign_pencil"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/pretendard_bold"
+                    android:gravity="center|left"
+                    android:paddingLeft="100dp"
+                    android:text="참여하기"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/rank_share"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/rank_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/recshare"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/rank_join"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_ranking"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                app:layout_constraintBottom_toTopOf="@+id/cl_sign1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cl_btn_share">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ranking"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/cl_sign1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/back_orange"
-                app:layout_constraintTop_toBottomOf="@+id/tv_notice"
+                app:layout_constraintTop_toBottomOf="@+id/cl_ranking"
                 tools:layout_editor_absoluteX="-34dp">
 
                 <TextView
                     android:id="@+id/tv_sign1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="37dp"
+                    android:layout_marginStart="30dp"
                     android:layout_marginTop="40dp"
                     android:layout_marginEnd="37dp"
                     android:fontFamily="@font/pretendard_bold"
                     android:text="어떤 서명운동인가요?"
                     android:textColor="@color/black"
-                    android:textSize="18sp"
+                    android:textSize="25dp"
                     app:layout_constraintBottom_toTopOf="@+id/iv_sign1"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -79,7 +165,7 @@
                     android:fontFamily="@font/pretendard_bold"
                     android:text="수용자 자녀가"
                     android:textColor="@color/white"
-                    android:textSize="22sp"
+                    android:textSize="23dp"
                     app:layout_constraintBottom_toTopOf="@+id/tv_s1_2"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -94,7 +180,7 @@
                     android:fontFamily="@font/pretendard_bold"
                     android:text="세상에 당당하게 서도록"
                     android:textColor="@color/white"
-                    android:textSize="22sp"
+                    android:textSize="23dp"
                     app:layout_constraintBottom_toTopOf="@+id/tv_s1_3"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -110,7 +196,7 @@
                     android:fontFamily="@font/pretendard_bold"
                     android:text="유엔아동권리협약 이행을 촉구합니다"
                     android:textColor="@color/white"
-                    android:textSize="22sp"
+                    android:textSize="23dp"
                     app:layout_constraintBottom_toBottomOf="@+id/iv_sign1"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -1374,23 +1460,57 @@
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_sign7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cl_sign6">
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="416dp"
+                    android:layout_height="661dp"
+                    android:src="@drawable/sign7"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.core.widget.NestedScrollView>
-    
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_join"
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_name"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:text="서명운동 참여하기"
-        android:paddingLeft="130dp"
-        android:gravity="center|left"
-        android:textColor="@color/white"
-        android:textSize="14sp"
-        android:fontFamily="@font/pretendard_bold"
-        android:drawableLeft="@drawable/sign_pencil"
-        android:drawablePadding="15dp"
-        android:background="@drawable/btn_round"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_join"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_round"
+            android:drawableLeft="@drawable/sign_pencil"
+            android:drawablePadding="15dp"
+            android:fontFamily="@font/pretendard_bold"
+            android:gravity="center|left"
+            android:paddingLeft="130dp"
+            android:text="서명운동 참여하기"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
