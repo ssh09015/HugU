@@ -86,6 +86,13 @@ class HomeCampaignTipFragment : Fragment() {
             container.addView(newLayout)
         }
     }
+
+    override fun onPause() {
+        super.onPause()
+
+        removeView()
+    }
+
     fun removeView(){
         container.removeAllViews()
         val newLayout = inflater.inflate(R.layout.transprant, container, false)
