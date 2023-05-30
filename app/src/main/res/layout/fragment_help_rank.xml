@@ -125,6 +125,8 @@
                 android:layout_height="711dp"
                 android:background="@color/back_orange"
                 app:layout_constraintTop_toBottomOf="@+id/cl_ranking"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
                 tools:layout_editor_absoluteX="0dp">
 
                 <TextView
@@ -350,6 +352,8 @@
                 android:layout_marginTop="12dp"
                 android:background="@color/back_orange"
                 app:layout_constraintTop_toBottomOf="@+id/cl_sign1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
                 tools:layout_editor_absoluteX="0dp">
 
                 <TextView
