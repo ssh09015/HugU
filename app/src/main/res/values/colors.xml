@@ -17,4 +17,5 @@
     <color name="seum2">#FF5100</color>
     <color name="font_gray"> #666666</color>
     <color name="back_orange">#1AFF5100</color>
+    <color name="transparent">#00000000</color>
 </resources>

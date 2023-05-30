@@ -1,14 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragment.HomeWebtoonFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/tv_web1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="15dp"
+        android:text="📢 수용자자녀가 마주한 세상의 차별과 편견을 생각해 보세요"
+        android:textSize="12sp"
+        android:textColor="@color/font_gray"
+        android:fontFamily="@font/pretendard_bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
-</FrameLayout>
+    <ImageView
+        android:id="@+id/iv_web1"
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/webtoon_img"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toBottomOf="@+id/tv_web1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_w1"
+        android:layout_width="282dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="27dp"
+        android:text="‘웹툰’으로 만나는"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/pretendard_bold"
+        app:layout_constraintStart_toStartOf="@+id/iv_web1"
+        app:layout_constraintTop_toTopOf="@id/iv_web1"/>
+
+    <TextView
+        android:id="@+id/tv_w2"
+        android:layout_width="282dp"
+        android:layout_height="wrap_content"
+        android:text="수용자 자녀 이야기"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/pretendard_bold"
+        app:layout_constraintStart_toStartOf="@+id/tv_w1"
+        app:layout_constraintTop_toBottomOf="@id/tv_w1"/>
+
+    <ImageButton
+        android:id="@+id/ib_w1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:src="@drawable/share"
+        android:background="@color/transparent"
+        app:layout_constraintEnd_toEndOf="@id/iv_web1"
+        app:layout_constraintTop_toTopOf="@+id/tv_w1"/>
+
+    <TextView
+        android:id="@+id/tv_w3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="6dp"
+        android:text="세움 대학생 당사자 자문단 2기 제작"
+        android:textSize="12sp"
+        android:textColor="@color/yellow"
+        android:fontFamily="@font/pretendard_regular"
+        app:layout_constraintTop_toBottomOf="@+id/tv_w2"
+        app:layout_constraintStart_toStartOf="@id/iv_web1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_web"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="16dp"
+        android:text="첫 화 보기"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:background="@drawable/btn_web"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_web1"
+        app:layout_constraintStart_toStartOf="@id/iv_web1"
+        app:layout_constraintEnd_toEndOf="@id/iv_web1"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_web"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="6dp"
+        app:layout_constraintTop_toBottomOf="@+id/iv_web1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
