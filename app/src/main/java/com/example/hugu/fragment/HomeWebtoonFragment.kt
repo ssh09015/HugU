@@ -1,12 +1,14 @@
 package com.example.hugu.fragment
 
+import android.content.Intent
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.hugu.R
+import com.example.hugu.WebtoonActivity
 import com.example.hugu.adapter.WebtoonRVAdapter
 import com.example.hugu.data.Webtoon
 import com.example.hugu.databinding.FragmentHomeWebtoonBinding
@@ -36,6 +38,28 @@ class HomeWebtoonFragment : Fragment() {
 
         viewBinding.rvWeb.layoutManager = LinearLayoutManager(context)
         viewBinding.rvWeb.adapter = adapter
+
+        adapter.setItemClickListener(object: WebtoonRVAdapter.OnItemClickListener {
+            override fun onClick(v: View, position: Int) {
+                val intent = Intent(requireActivity(), WebtoonActivity::class.java)
+                startActivity(intent)
+            }
+        })
+
+        viewBinding.btnWeb.setOnClickListener {
+            val intent = Intent(requireActivity(), WebtoonActivity::class.java)
+            startActivity(intent)
+        }
+
+        viewBinding.ibW1.setOnClickListener {
+            val msg = Intent(Intent.ACTION_SEND)
+
+            msg.addCategory(Intent.CATEGORY_DEFAULT)
+            msg.putExtra(Intent.EXTRA_TEXT, "https://play.google.com/store/apps/details?id=hugu")
+            msg.putExtra(Intent.EXTRA_TITLE, "제목")
+            msg.type = "text/plain"
+            startActivity(Intent.createChooser(msg, "앱을 선택해 주세요"))
+        }
 
     }
 }

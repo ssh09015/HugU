@@ -1,7 +1,9 @@
 package com.example.hugu.adapter
 
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
+import android.widget.AdapterView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.hugu.data.Webtoon
 import com.example.hugu.databinding.ItemWebtoonBinding
@@ -22,6 +24,10 @@ class WebtoonRVAdapter(private val wtList: ArrayList<Webtoon>): RecyclerView.Ada
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.bind(wtList[position])
+
+        holder.itemView.setOnClickListener {
+            itemClickListener.onClick(it, position)
+        }
     }
 
     override fun getItemCount(): Int = wtList.size
@@ -29,5 +35,15 @@ class WebtoonRVAdapter(private val wtList: ArrayList<Webtoon>): RecyclerView.Ada
     override fun getItemViewType(position: Int): Int {
         return position
     }
+
+    interface OnItemClickListener {
+        fun onClick(v: View, position: Int)
+    }
+
+    fun setItemClickListener(onItemClickListener: OnItemClickListener) {
+        this.itemClickListener = onItemClickListener
+    }
+
+    private lateinit var itemClickListener : OnItemClickListener
 
 }

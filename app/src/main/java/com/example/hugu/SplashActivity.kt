@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import com.example.hugu.databinding.ActivitySplashBinding
+import com.example.hugu.login.LoginActivity
 
 class SplashActivity : AppCompatActivity() {
     lateinit var viewBinding: ActivitySplashBinding
@@ -17,7 +18,7 @@ class SplashActivity : AppCompatActivity() {
         // Looper.getMainLooper() : 에러 방지
         Handler(Looper.getMainLooper()).postDelayed({
 
-            startActivity(Intent(this, StartActivity::class.java)) // MainActivity로 이동
+            startActivity(Intent(this, LoginActivity::class.java)) // MainActivity로 이동
             finish(); // 현재 Activity 닫기
 
         }, 1000) // 지연시간 1초

@@ -3,6 +3,7 @@ package com.example.hugu.login
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.hugu.MainActivity
 import com.example.hugu.databinding.ActivityLoginBinding
 import com.example.hugu.signup.SignupEmailActivity
 
@@ -19,6 +20,11 @@ class LoginActivity : AppCompatActivity() {
             this.startActivity(intent)
             overridePendingTransition(0, 0)
           }
+
+        viewBinding.loginBtn.setOnClickListener{
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
 
         setContentView(viewBinding.root)
     }

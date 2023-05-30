@@ -14,8 +14,8 @@
         android:theme="@style/Theme.HugU"
         tools:targetApi="31">
         <activity
-            android:name=".StartActivity"
-            android:exported="true">
+            android:name=".WebtoonActivity"
+            android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -41,7 +41,6 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-
         <activity
             android:name=".login.LoginActivity"
             android:exported="false">
