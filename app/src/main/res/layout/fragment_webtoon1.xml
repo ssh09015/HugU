@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/one_1"
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:src="@drawable/one_1"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageView
+            android:id="@+id/one_2"
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:layout_marginTop="120dp"
+            android:src="@drawable/one_2"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toBottomOf="@id/one_1"/>
+
+        <ImageView
+            android:id="@+id/one_3"
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:layout_marginTop="120dp"
+            android:src="@drawable/one_3"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toBottomOf="@id/one_2"/>
+
+        <ImageView
+            android:id="@+id/one_4"
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:layout_marginTop="120dp"
+            android:src="@drawable/one_4"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toBottomOf="@id/one_3"/>
+
+        <ImageView
+            android:id="@+id/one_5"
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:layout_marginTop="120dp"
+            android:src="@drawable/one_5"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toBottomOf="@id/one_4"/>
+
+        <ImageView
+            android:id="@+id/one_6"
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:layout_marginTop="120dp"
+            android:src="@drawable/one_6"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toBottomOf="@id/one_5"/>
+
+        <ImageView
+            android:id="@+id/one_7"
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:layout_marginTop="120dp"
+            android:src="@drawable/one_7"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toBottomOf="@id/one_6"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/two_1"
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:src="@drawable/two_1"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageView
+            android:id="@+id/two_2"
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:layout_marginTop="120dp"
+            android:src="@drawable/two_2"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toBottomOf="@id/two_1"/>
+
+        <ImageView
+            android:id="@+id/two_3"
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:layout_marginTop="120dp"
+            android:src="@drawable/two_3"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toBottomOf="@id/two_2"/>
+
+        <ImageView
+            android:id="@+id/two_4"
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:layout_marginTop="120dp"
+            android:src="@drawable/two_4"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toBottomOf="@id/two_3"/>
+
+        <ImageView
+            android:id="@+id/two_5"
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:layout_marginTop="120dp"
+            android:src="@drawable/two_5"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toBottomOf="@id/two_4"/>
+
+        <ImageView
+            android:id="@+id/two_6"
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:layout_marginTop="120dp"
+            android:src="@drawable/two_6"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toBottomOf="@id/two_5"/>
+
+        <ImageView
+            android:id="@+id/two_7"
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:layout_marginTop="120dp"
+            android:src="@drawable/two_7"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toBottomOf="@id/two_6"/>
+
+        <ImageView
+            android:id="@+id/two_8"
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:layout_marginTop="120dp"
+            android:src="@drawable/two_8"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toBottomOf="@id/two_7"/>
+
+        <ImageView
+            android:id="@+id/two_9"
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:layout_marginTop="120dp"
+            android:src="@drawable/two_8"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toBottomOf="@id/two_8"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

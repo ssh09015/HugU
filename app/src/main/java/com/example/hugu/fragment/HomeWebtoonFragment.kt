@@ -41,8 +41,8 @@ class HomeWebtoonFragment : Fragment() {
 
         adapter.setItemClickListener(object: WebtoonRVAdapter.OnItemClickListener {
             override fun onClick(v: View, position: Int) {
-                val intent = Intent(requireActivity(), WebtoonActivity::class.java)
-                startActivity(intent)
+                val wIntent = Intent(requireActivity(), WebtoonActivity::class.java)
+                startActivity(wIntent)
             }
         })
 
