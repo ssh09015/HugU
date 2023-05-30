@@ -51,98 +51,79 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center|left"
                 android:layout_marginLeft="21dp"
-                android:text="일상생활 TIP"
+                android:text="지원정책"
                 android:textSize="18dp"
                 android:fontFamily="@font/pretendard_extrabold">
             </TextView>
         </FrameLayout>
 
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/home_campaign_year"
+            app:layout_constraintEnd_toStartOf="@+id/guideline1"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toTopOf="@+id/guideline3"></ImageView>
+
         <LinearLayout
             android:id="@+id/linearLayout3"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical"
+            app:layout_constraintVertical_weight="1"
+            android:gravity="top"
             app:layout_constraintEnd_toStartOf="@+id/guideline5"
-            app:layout_constraintStart_toStartOf="@+id/guideline"
-            app:layout_constraintTop_toBottomOf="@+id/frameLayout">
+            app:layout_constraintStart_toStartOf="@+id/guideline1"
+            app:layout_constraintTop_toBottomOf="@+id/guideline3">
 
-            <ImageView
-                android:id="@+id/money_btn"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_marginRight="6dp"
-                android:adjustViewBounds="true"
-                android:src="@drawable/home_tip_money"></ImageView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:background="@drawable/home_campaign_round"
+                android:gravity="left|center"
+                android:layout_marginBottom="12dp"
+                android:paddingLeft="15dp"
+                android:text="한정애 의원실에서 수용자자녀 보호 3법을\n개정발의하여 국회 상임위에 계류 중"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
 
-            <ImageView
-                android:id="@+id/phone_btn"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_marginLeft="6dp"
-                android:adjustViewBounds="true"
-                android:src="@drawable/home_tip_handphone"></ImageView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/home_campaign_round"
+                android:gravity="left|center"
+                android:paddingLeft="15dp"
+                android:text="한정애 의원실에서 수용자자녀 보호 3법을\n개정발의하여 국회 상임위에 계류 중"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:background="@drawable/home_campaign_round"
+                android:gravity="left|center"
+                android:layout_marginBottom="12dp"
+                android:paddingLeft="15dp"
+                android:text="한정애 의원실에서 수용자자녀 보호 3법을\n개정발의하여 국회 상임위에 계류 중"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
         </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/linearLayout5"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:orientation="horizontal"
-            app:layout_constraintEnd_toStartOf="@+id/guideline5"
-            app:layout_constraintStart_toStartOf="@+id/guideline"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
-
-            <ImageView
-                android:id="@+id/home_btn"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_marginRight="6dp"
-                android:adjustViewBounds="true"
-                android:src="@drawable/home_tip_home"></ImageView>
-
-            <ImageView
-                android:id="@+id/pass_btn"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_marginLeft="6dp"
-                android:adjustViewBounds="true"
-                android:src="@drawable/home_tip_pass"></ImageView>
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/linearLayout6"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:orientation="horizontal"
-            app:layout_constraintEnd_toStartOf="@+id/guideline5"
-            app:layout_constraintStart_toStartOf="@+id/guideline"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
-
-            <ImageView
-                android:id="@+id/light_btn"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="6dp"
-                android:layout_weight="1"
-                android:adjustViewBounds="true"
-                android:src="@drawable/home_tip_light"></ImageView>
-
-            <ImageView
-                android:id="@+id/school_btn"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="6dp"
-                android:layout_weight="1"
-                android:adjustViewBounds="true"
-                android:src="@drawable/home_tip_school"></ImageView>
-        </LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginBottom="50dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/home_campaign_policy"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintStart_toStartOf="@+id/guideline7"
+            app:layout_constraintTop_toTopOf="@+id/guideline6"></ImageView>
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline"
@@ -155,7 +136,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.075"/>
+            app:layout_constraintGuide_percent="0.19"/>
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline2"
@@ -164,6 +145,12 @@
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.05"/>
 
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.20"/>
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline4"
             android:layout_width="wrap_content"
@@ -176,5 +163,17 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             app:layout_constraintGuide_percent="0.95" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.60"/>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

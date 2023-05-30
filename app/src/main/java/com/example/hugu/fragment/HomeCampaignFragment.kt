@@ -62,6 +62,16 @@ class HomeCampaignFragment : Fragment() {
             viewPager.setCurrentItem(1, false)
             activity.changeFragment(1)
         }
+        policy_option.setOnClickListener {
+            activity.changeFragment(2)
+        }
+        campaign_option.setOnClickListener {
+            activity.changeFragment(3)
+        }
+        meta_option.setOnClickListener {
+            activity.changeFragment(4)
+        }
+
         viewPager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
             override fun onPageSelected(position: Int) {
                 super.onPageSelected(position)
