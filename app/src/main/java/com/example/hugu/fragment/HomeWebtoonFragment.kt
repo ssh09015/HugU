@@ -13,6 +13,8 @@ import com.example.hugu.adapter.WebtoonRVAdapter
 import com.example.hugu.data.Webtoon
 import com.example.hugu.databinding.FragmentHomeWebtoonBinding
 
+var webIndex: Int = 0
+
 class HomeWebtoonFragment : Fragment() {
     lateinit var viewBinding: FragmentHomeWebtoonBinding
 
@@ -42,6 +44,7 @@ class HomeWebtoonFragment : Fragment() {
         adapter.setItemClickListener(object: WebtoonRVAdapter.OnItemClickListener {
             override fun onClick(v: View, position: Int) {
                 val wIntent = Intent(requireActivity(), WebtoonActivity::class.java)
+                webIndex = position
                 startActivity(wIntent)
             }
         })
