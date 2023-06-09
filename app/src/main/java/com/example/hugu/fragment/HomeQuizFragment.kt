@@ -101,7 +101,7 @@ class HomeQuizFragment : Fragment() {
                 yes_body.setText("유엔 아동권리협약 - 제2조 차별금지\n\n아동은 차별받지 않을 권리가 있습니다.\n\n부모의 상황이나 사회적 신분 등에 상관없이\n\n모든 아동은 동등한 권리를 누려야 합니다.")
             }else if(easy_count==4){
                 score++
-                yes_body.setText("이외에도 부모가 수용된 후에도\n\n안정적인 집에서 건강한 어른의 보살핌을 받고\n\n보호받을 권리,부모가 수용된 후에도\n\n신체적으로 건강하게 심리적으로\n\n보호받을 수 있는 권리등이 존재합니다.")
+                yes_body.setText("이외에도 부모가 수용된 후에도\n\n안정적인 집에서 건강한 어른의 보살핌을 받고\n\n보호받을 권리,부모가 수용된 후에도\n\n신체적/심리적으로 건강하게\n\n발달할 수 있는 권리 등이 존재합니다.")
             }else if(easy_count==5) {
                 score++
                 yes_body.setText("형사절차가 진행되는 동안 자녀를\n\n보호하기 위해서는 아동보호환경 마련하기,\n\n부모를 만날 권리 지키기,수용자 자녀 전문\n\n지원기관의 도움 받기등이 필요합니다.  ")
@@ -448,9 +448,9 @@ class HomeQuizFragment : Fragment() {
                 normal_body.setText("세움에서 만든 한국의 수용자 자녀 8대\n\n권리에 대해서 옳지 않은 것은?")
                 checkans.visibility = View.GONE
                 first_option.setText("부모의 수용사실로 인해 사회적 비난 받거나\n차별 받지 않고 살아갈 권리")
-                second_option.setText("부모 수용으로 인해 경제/심리/사회적인\n어려움일 경우 도움을 받을 수 있는 권리")
+                second_option.setText("부모 수용으로 인해 어려움에 처해 있을 경우\n구체적인 지원과 도움 받을 수 있는 권리")
                 third_option.setText("부모 수용으로 인해 지원을 받을 때 정보가\n노출되지 않도록 보호받을 권리")
-                fourth_option.setText("부모 범죄 사실에 대해\n정서/사회적 책임을 다할 권리")
+                fourth_option.setText("부모 범죄 사실에 대해\n정서적/사회적 책임을 다할 권리")
             } else if (easy_count == 5) {
                 line4.visibility = View.INVISIBLE
                 line5.visibility = View.VISIBLE
