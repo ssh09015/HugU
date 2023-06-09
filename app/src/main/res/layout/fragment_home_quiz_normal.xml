@@ -53,22 +53,21 @@
             android:orientation="vertical">
             <ImageView
                 android:id="@+id/hug_u"
-                android:text="HUG U"
-                android:textSize="20dp"
-                android:includeFontPadding="false"
-                android:layout_width="37dp"
-                android:layout_height="22dp"
-                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginBottom="14dp"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
                 android:gravity="center_vertical"
-                android:src="@drawable/home_title_hug_u"
-                android:layout_weight="1" />
+                android:includeFontPadding="false"
+                android:src="@drawable/hug_smile" />
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="29dp"
                 android:layout_weight="1">
                 <ImageView
+                    android:id="@+id/backbtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="21.4dp"
@@ -82,6 +81,7 @@
                     android:layout_gravity="center|left"
                     android:layout_marginLeft="42dp"
                     android:text="noraml"
+                    android:textColor="@color/black"
                     android:textSize="14dp"
                     android:fontFamily="@font/pretendard_extrabold">
                 </TextView>
@@ -100,6 +100,7 @@
                     android:text="Q.1">
                 </TextView>
                 <ImageView
+                    android:id="@+id/outbtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center|right"
@@ -168,7 +169,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/home_quiz_line"
-                        android:visibility="invisible"></ImageView>
+                        android:visibility="gone"></ImageView>
                 </LinearLayout>
             </FrameLayout>
             <TextView
@@ -179,7 +180,7 @@
                 android:gravity="center"
                 android:fontFamily="@font/pretendard_bold"
                 android:textColor="@color/black"
-                android:text="수용자의 자녀와 가족을 세상의 중심에\n\n세우고 함께 걸아가기 위해 설립된\n\n아동복지 전문 단체의 이름은?"
+                android:text="수용자 가족을 위해 설립된\n\n국내 유일의 수용자자녀 전문기관의 이름은?"
                 android:textSize="20dp"></TextView>
             <LinearLayout
                 android:layout_width="match_parent"

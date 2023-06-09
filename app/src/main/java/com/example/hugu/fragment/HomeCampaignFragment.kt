@@ -49,6 +49,9 @@ class HomeCampaignFragment : Fragment() {
 
         val otherLayout = LayoutInflater.from(context).inflate(R.layout.fragment_home, null)
         val viewPager = otherLayout.findViewById<ViewPager2>(R.id.viewPager)
+        val facebook = view.findViewById<ImageView>(R.id.facebook)
+        val youtube = view.findViewById<ImageView>(R.id.youtube)
+        val instargram = view.findViewById<ImageView>(R.id.instargram)
 
         val pagerAdapter = PagerFragmentStateAdapter(requireActivity())
         pagerAdapter.addFragment(HomeCampaignFragment())
@@ -72,6 +75,18 @@ class HomeCampaignFragment : Fragment() {
         }
         meta_option.setOnClickListener {
             var intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://iseum.or.kr/154"))
+            startActivity(intent)
+        }
+        instargram.setOnClickListener {
+            var intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.instagram.com/iseum_official/"))
+            startActivity(intent)
+        }
+        facebook.setOnClickListener {
+            var intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/yonseihabitat/"))
+            startActivity(intent)
+        }
+        youtube.setOnClickListener {
+            var intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/channel/UCJcNS1p9AP4DUkKKtejFXLg"))
             startActivity(intent)
         }
 

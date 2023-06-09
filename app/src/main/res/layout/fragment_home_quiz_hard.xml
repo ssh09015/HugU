@@ -40,6 +40,7 @@
             app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
 
             <ImageView
+                android:id="@+id/backbtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/home_quiz_easy_bar"></ImageView>
@@ -51,6 +52,7 @@
                 android:layout_gravity="center|left"
                 android:layout_marginLeft="21dp"
                 android:text="hard"
+                android:textColor="@color/black"
                 android:textSize="14dp"
                 android:fontFamily="@font/pretendard_extrabold">
             </TextView>
@@ -69,6 +71,7 @@
                 android:textSize="14dp"></TextView>
 
             <ImageView
+                android:id="@+id/outbtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center|right"
@@ -140,7 +143,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:src="@drawable/home_quiz_line"
-                    android:visibility="invisible"></ImageView>
+                    android:visibility="gone"></ImageView>
             </LinearLayout>
         </FrameLayout>
 
@@ -151,7 +154,7 @@
             android:gravity="center"
             android:fontFamily="@font/pretendard_bold"
             android:textColor="@color/black"
-            android:text="수용자의 자녀와 가족을 세상의 중심에\n\n세우고 함께 걸아가기 위해 설립된\n\n아동복지 전문 단체의 이름은?"
+            android:text="유엔 아동 권리 협약 제9조의\n\n내용으로 옳은 것은?"
             android:textSize="20dp"
             app:layout_constraintBottom_toTopOf="@+id/one"
             app:layout_constraintEnd_toStartOf="@+id/guideline5"
@@ -173,7 +176,7 @@
                 android:layout_gravity="center"
                 android:background="@drawable/home_quiz_round"
                 android:gravity="center"
-                android:text="세움"
+                android:text="아동은 부모와 함께 자라나고 부모와 떨어져\n지내지 않을 권리가 있다."
                 android:textColor="@color/black"
                 android:textSize="14dp"></TextView>
         </LinearLayout>
@@ -186,7 +189,7 @@
             android:layout_marginBottom="12dp"
             android:background="@drawable/home_quiz_round"
             android:gravity="center"
-            android:text="세이브더 칠드런"
+            android:text="아동은 부모의 상황에 따라\n차별받을 수 있는 상황이 발생할 수 있다."
             android:textColor="@color/black"
             android:textSize="14dp"
             app:layout_constraintBottom_toTopOf="@+id/third_option"
@@ -203,7 +206,7 @@
             android:layout_marginBottom="12dp"
             android:background="@drawable/home_quiz_round"
             android:gravity="center"
-            android:text="NGO"
+            android:text="아동은 수용자의 자녀와 친구가 되지 않을 권리가 있다."
             android:textColor="@color/black"
             android:textSize="14dp"
             app:layout_constraintBottom_toTopOf="@+id/fourth_option"
@@ -220,7 +223,7 @@
             android:layout_marginBottom="12dp"
             android:background="@drawable/home_quiz_round"
             android:gravity="center"
-            android:text="숨음"
+            android:text="아동이 부모와 어쩔 수 없이 헤어져 살아야 하는\n경우에는 이를 인정하고 받아들일 의무가 있다. "
             android:textColor="@color/black"
             android:textSize="14dp"
             app:layout_constraintBottom_toTopOf="@+id/checkans_hard"

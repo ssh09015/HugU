@@ -92,19 +92,37 @@ class HomeQuizFragment : Fragment() {
         if(dialog1.findViewById<TextView>(R.id.difficulty).text=="noraml"){
             if(easy_count==1){
                 score++
-                yes_body.setText("‘세움’은 수용자 자녀와 가족을 \n\n세상의 중심에 세우고 함께 걸어가기 위해\n\n2015년 설립된 아동복지 전문단체입니다.")
+                yes_body.setText("국내 유일의 수용자자녀 전문지원기관 “세움”은\n\n수용자의 자녀와 가족을 세상의 중심에\n\n세우고 함께 걸아가기 위해 설립되었습니다.")
             }else if(easy_count==2){
                 score++
-                yes_body.setText("2")
+                yes_body.setText("법무부의 2021년 조사 결과, 미성년 자녀가 있는\n\n수용자 중 양육비를 지원에 의지하는 수용자는\n\n444명(5.7%)으로 밝혀졌습니다. 입소 전 \n\n기초생활 수급 등 국가지원 대상자가 1,649명으로\n\n지원을 받지 못한다는 것을 알 수 있습니다.")
             }else if(easy_count==3){
                 score++
-                yes_body.setText("3")
+                yes_body.setText("유엔 아동권리협약 - 제2조 차별금지\n\n아동은 차별받지 않을 권리가 있습니다.\n\n부모의 상황이나 사회적 신분 등에 상관없이\n\n모든 아동은 동등한 권리를 누려야 합니다.")
             }else if(easy_count==4){
                 score++
-                yes_body.setText("4")
+                yes_body.setText("이외에도 부모가 수용된 후에도\n\n안정적인 집에서 건강한 어른의 보살핌을 받고\n\n보호받을 권리,부모가 수용된 후에도\n\n신체적으로 건강하게 심리적으로\n\n보호받을 수 있는 권리등이 존재합니다.")
             }else if(easy_count==5) {
                 score++
-                yes_body.setText("5")
+                yes_body.setText("형사절차가 진행되는 동안 자녀를\n\n보호하기 위해서는 아동보호환경 마련하기,\n\n부모를 만날 권리 지키기,수용자 자녀 전문\n\n지원기관의 도움 받기등이 필요합니다.  ")
+            }
+        }
+        if(dialog1.findViewById<TextView>(R.id.difficulty).text=="hard"){
+            if(easy_count==1){
+                score++
+                yes_body.setText("유엔아동권리협약 - 제 9조\n\n'부모와 떨어져 지내지않을 권리'\n\n아동은 부모와 떨어져 지내지 않을 권리가 있습니다.\n\n어쩔 수 없이 헤어져 살아야 하는 경우에는\n\n정기적으로 부모와 만날 수 있어야 합니다")
+            }else if(easy_count==2){
+                score++
+                yes_body.setText("보통 재범률은 25%으로 알려져 있는 것에 비해,\n\n세움에서 지원해 온 수용자들의 재범률은\n\n5.7%에 불과했습니다.이로써,수용자 자녀 지원이\n\n단순히 자녀 본인뿐 아니라 가족 전체에 영향을\n\n미친다는 것을 알 수 있습니다.")
+            }else if(easy_count==3){
+                score++
+                yes_body.setText("법률에서는 남성 수용자의 자녀 양육은\n\n허락하지 않고 있으며, 출산이 아닌\n\n수감 전 양육을 하던 자녀를 위한 교정시설 내\n\n양육에 대해서는 법률적 지원 및 근거가\n\n존재하지 않습니다.")
+            }else if(easy_count==4){
+                score++
+                yes_body.setText("유럽연합에서는 매년6월\n\n'Not my crime, Still my sentence!'라는\n\n캐치프레이즈를 가지고 수용자 자녀에 대한 관심을\n\n촉구하고 있습니다. 모든 아동은 유엔아동권리협약의\n\n무차별원칙에 의해서 살아갈 권리가 있습니다.")
+            }else if(easy_count==5) {
+                score++
+                yes_body.setText("한정애 국회의원은 수용자 자녀 인권 관련 문제점을\n\n전반적으로 점검해 ‘수용자 자녀 보호3법’을\n\n마련했습니다. 하지만, 자녀의 법정 대리인 동의와\n\n관련된 내용은 담겨있지 않아 수용자 자녀의\n\n이러한 어려움은 여전히 지속되고 있습니다.")
             }
         }
 
@@ -113,7 +131,7 @@ class HomeQuizFragment : Fragment() {
         next.setOnClickListener {
             dialog4.dismiss()
             if(easy_count >=5){
-                showDialog5(requireContext())
+                showDialog5(requireContext(),dialog1)
                 dialog1.dismiss()
             }
         }
@@ -145,15 +163,28 @@ class HomeQuizFragment : Fragment() {
         }
         if(dialog1.findViewById<TextView>(R.id.difficulty).text=="noraml"){
             if(easy_count==1){
-                no_body.setText("‘세움’은 수용자 자녀와 가족을 \n\n세상의 중심에 세우고 함께 걸어가기 위해\n\n2015년 설립된 아동복지 전문단체입니다.")
+                no_body.setText("국내 유일의 수용자자녀 전문지원기관 “세움”은\n\n수용자의 자녀와 가족을 세상의 중심에\n\n세우고 함께 걸아가기 위해 설립되었습니다.")
             }else if(easy_count==2){
-                no_body.setText("2")
+                no_body.setText("법무부의 2021년 조사 결과, 미성년 자녀가 있는\n\n수용자 중 양육비를 지원에 의지하는 수용자는\n\n444명(5.7%)으로 밝혀졌습니다. 입소 전 \n\n기초생활 수급 등 국가지원 대상자가 1,649명으로\n\n지원을 받지 못한다는 것을 알 수 있습니다.")
             }else if(easy_count==3){
-                no_body.setText("3")
+                no_body.setText("유엔 아동권리협약 - 제2조 차별금지\n\n아동은 차별받지 않을 권리가 있습니다.\n\n부모의 상황이나 사회적 신분 등에 상관없이\n\n모든 아동은 동등한 권리를 누려야 합니다.")
             }else if(easy_count==4){
-                no_body.setText("4")
+                no_body.setText("이외에도 부모가 수용된 후에도\n\n안정적인 집에서 건강한 어른의 보살핌을 받고\n\n보호받을 권리,부모가 수용된 후에도\n\n신체적으로 건강하게 심리적으로\n\n보호받을 수 있는 권리등이 존재합니다.")
             }else if(easy_count==5) {
-                no_body.setText("5")
+                no_body.setText("형사절차가 진행되는 동안 자녀를\n\n보호하기 위해서는 아동보호환경 마련하기,\n\n부모를 만날 권리 지키기,수용자 자녀 전문\n\n지원기관의 도움 받기등이 필요합니다.  ")
+            }
+        }
+        if(dialog1.findViewById<TextView>(R.id.difficulty).text=="hard"){
+            if(easy_count==1){
+                no_body.setText("유엔아동권리협약 - 제 9조\n\n'부모와 떨어져 지내지않을 권리'\n\n아동은 부모와 떨어져 지내지 않을 권리가 있습니다.\n\n어쩔 수 없이 헤어져 살아야 하는 경우에는\n\n정기적으로 부모와 만날 수 있어야 합니다")
+            }else if(easy_count==2){
+                no_body.setText("보통 재범률은 25%으로 알려져 있는 것에 비해,\n\n세움에서 지원해 온 수용자들의 재범률은\n\n5.7%에 불과했습니다.이로써,수용자 자녀 지원이\n\n단순히 자녀 본인뿐 아니라 가족 전체에 영향을\n\n미친다는 것을 알 수 있습니다.")
+            }else if(easy_count==3){
+                no_body.setText("법률에서는 남성 수용자의 자녀 양육은\n\n허락하지 않고 있으며, 출산이 아닌\n\n수감 전 양육을 하던 자녀를 위한 교정시설 내\n\n양육에 대해서는 법률적 지원 및 근거가\n\n존재하지 않습니다.")
+            }else if(easy_count==4){
+                no_body.setText("유럽연합에서는 매년6월\n\n'Not my crime, Still my sentence!'라는\n\n캐치프레이즈를 가지고 수용자 자녀에 대한 관심을\n\n촉구하고 있습니다. 모든 아동은 유엔아동권리협약의\n\n무차별원칙에 의해서 살아갈 권리가 있습니다.")
+            }else if(easy_count==5) {
+                no_body.setText("한정애 국회의원은 수용자 자녀 인권 관련 문제점을\n\n전반적으로 점검해 ‘수용자 자녀 보호3법’을\n\n마련했습니다. 하지만, 자녀의 법정 대리인 동의와\n\n관련된 내용은 담겨있지 않아 수용자 자녀의\n\n이러한 어려움은 여전히 지속되고 있습니다.")
             }
         }
 
@@ -162,17 +193,18 @@ class HomeQuizFragment : Fragment() {
         next.setOnClickListener {
             dialog6.dismiss()
             if(easy_count >=5){
-                showDialog5(requireContext())
+                showDialog5(requireContext(),dialog1)
                 dialog1.dismiss()
             }
         }
     }
-    fun showDialog5(context: Context) {
+    fun showDialog5(context: Context,dialog: Dialog) {
         val dialog5 = Dialog(context)
         dialog5.requestWindowFeature(Window.FEATURE_NO_TITLE)
         dialog5.setContentView(R.layout.fragment_home_quiz_end_easy)
         val end_btn = dialog5.findViewById<ImageView>(R.id.end_btn)
         val score_text = dialog5.findViewById<TextView>(R.id.score)
+        val easy_word = dialog5.findViewById<TextView>(R.id.easy_word)
 
         dialog5.window?.let {
             it.setLayout(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT)
@@ -180,10 +212,16 @@ class HomeQuizFragment : Fragment() {
         }
         dialog5.setCanceledOnTouchOutside(false) // 외부 여백 클릭 시 Dialog 닫히지 않도록 설정
         score_text.setText("$score / 5") //!!!!!!!!!!!!!!!!!!!!!11
+        if(dialog.findViewById<TextView>(R.id.difficulty).text=="noraml"){
+            easy_word.setText("NORM")
+        } else if (dialog.findViewById<TextView>(R.id.difficulty).text=="hard"){
+            easy_word.setText("HARD")
+        }
         dialog5.show()
 
         end_btn.setOnClickListener {
             dialog5.dismiss()
+            easy_count=0
         }
     }
     fun showDialog1(context: Context) {
@@ -211,6 +249,9 @@ class HomeQuizFragment : Fragment() {
         val drawable2 = ContextCompat.getDrawable(context, R.drawable.home_quiz_redwrong)
         val drawable3 = ContextCompat.getDrawable(context, R.drawable.home_quiz_correct_btn)
         val drawable4 = ContextCompat.getDrawable(context, R.drawable.home_quiz_wrong_btn)
+
+        val backbtn = dialog1.findViewById<ImageView>(R.id.backbtn)
+        val outbtn = dialog1.findViewById<ImageView>(R.id.outbtn)
 
         val line1 = dialog1.findViewById<ImageView>(R.id.line1)
         val line2 = dialog1.findViewById<ImageView>(R.id.line2)
@@ -330,6 +371,14 @@ class HomeQuizFragment : Fragment() {
                 }
             }
         }
+        backbtn.setOnClickListener {
+            dialog1.dismiss()
+            easy_count=0
+        }
+        outbtn.setOnClickListener {
+            dialog1.dismiss()
+            easy_count=0
+        }
     }
     var easy_count=1
     fun showDialog2(context: Context) {
@@ -362,6 +411,9 @@ class HomeQuizFragment : Fragment() {
         val fourth_option = dialog2.findViewById<TextView>(R.id.fourth_option)
         val checkans = dialog2.findViewById<ImageView>(R.id.checkans_normal)
 
+        val outbtn = dialog2.findViewById<ImageView>(R.id.outbtn)
+        val backbtn = dialog2.findViewById<ImageView>(R.id.backbtn)
+
         fun reset(){
             first_option.setBackgroundResource(R.drawable.home_quiz_round)
             second_option.setBackgroundResource(R.drawable.home_quiz_round)
@@ -373,42 +425,42 @@ class HomeQuizFragment : Fragment() {
                 line1.visibility = View.INVISIBLE
                 line2.visibility = View.VISIBLE
                 quiz_num.setText("Q.2")
-                normal_body.setText("미성년자 수용자 자녀는 핸드폰 개통, 여권\n\n발급, 개인정보 열람 등을 만들기 힘듭니다.\n\n그 이유는 무엇일까요?")
+                normal_body.setText("미성년 자녀가 있는 수용자 중,양육비를 \n\n국가 지원에 의지하는 수용자 비율은? ")
                 checkans.visibility = View.GONE
-                first_option.setText("피해자들이 반대운동을 하기 때문")
-                second_option.setText("편견으로 인해 발급기관에서 거부하기 때문")
-                third_option.setText("신용 문제로 인해 법으로 금지하고 있기 때문")
-                fourth_option.setText("법정대리인 동반이 있어야 본인 확인이 가능하기 때문")
+                first_option.setText("5.7%")
+                second_option.setText("10.2%")
+                third_option.setText("30.4%")
+                fourth_option.setText("70.8%")
             } else if (easy_count == 3) {
                 line2.visibility = View.INVISIBLE
                 line3.visibility = View.VISIBLE
                 quiz_num.setText("Q.3")
-                normal_body.setText("우리나라에서 수용자 자녀에 관한 법률과 \n\n관련된 내용으로 \n\n옳은 것은 무엇일까요?")
+                normal_body.setText("유엔 아동 권리 협약\n\n제2조의 내용으로 옳은 것은?")
                 checkans.visibility = View.GONE
-                first_option.setText("아동복지법")
-                second_option.setText("형의 집행 및 수용자 처우에 관한 법")
-                third_option.setText("청소년 보호법")
-                fourth_option.setText("모두 다")
+                first_option.setText("아동은 차별받지 않을 권리가 있다")
+                second_option.setText("아동은 부모 잘못을 책임져야 할 의무가 있다")
+                third_option.setText("범법행위를 한 부모는 자녀를 만날 수 없다")
+                fourth_option.setText("아동은 수용자 부모와 만나지 않을 의무가 있다")
             } else if (easy_count == 4) {
                 line3.visibility = View.INVISIBLE
                 line4.visibility = View.VISIBLE
                 quiz_num.setText("Q.4")
-                normal_body.setText("교정본부가 하는 일로\n\n옳지 않은 내용은 무엇일까요?")
+                normal_body.setText("세움에서 만든 한국의 수용자 자녀 8대\n\n권리에 대해서 옳지 않은 것은?")
                 checkans.visibility = View.GONE
-                first_option.setText("판결")
-                second_option.setText("형벌의 관리, 감독")
-                third_option.setText("교화활동")
-                fourth_option.setText("사회복귀 준비")
+                first_option.setText("부모의 수용사실로 인해 사회적 비난 받거나\n차별 받지 않고 살아갈 권리")
+                second_option.setText("부모 수용으로 인해 경제/심리/사회적인\n어려움일 경우 도움을 받을 수 있는 권리")
+                third_option.setText("부모 수용으로 인해 지원을 받을 때 정보가\n노출되지 않도록 보호받을 권리")
+                fourth_option.setText("부모 범죄 사실에 대해\n정서/사회적 책임을 다할 권리")
             } else if (easy_count == 5) {
                 line4.visibility = View.INVISIBLE
                 line5.visibility = View.VISIBLE
                 quiz_num.setText("Q.5")
-                normal_body.setText("UN 아동권리위원회의 권고 후\n\n우리 사회가 수용자 자녀를 위해\n\n변화한 것 중 아닌 것은?")
+                normal_body.setText("형사절차가 진행되는 동안 자녀를 보호하기 위해\n\n필요한 것으로 적절하지 않은 것은?")
                 checkans.visibility = View.GONE
-                first_option.setText("아동친화적 가족 접결실을 교정시설에 설치")
-                second_option.setText("수용자자녀 보호 3법을 개정발의하여 국회에서 논의 중")
-                third_option.setText("수용자 자녀를 위한 관련부처 협의체 구성")
-                fourth_option.setText("지방교정청 위기수용자자녀 지원팀 운영")
+                first_option.setText("아동보호환경 마련하기")
+                second_option.setText("임의로 주변인물에게 수용 사실에 대해 알리기")
+                third_option.setText("부모를 만날 권리 지키기")
+                fourth_option.setText("수용자 자녀 전문 지원 기관 도움 받기")
             }
             reset()
         }
@@ -424,7 +476,9 @@ class HomeQuizFragment : Fragment() {
                 checkans.setOnClickListener {
                     if (easy_count == 1) {
                         showDialog4(requireContext(), easy_count, dialog2)
-                    } else if (easy_count == 4) {
+                    } else if (easy_count == 2) {
+                        showDialog4(requireContext(), easy_count, dialog2)
+                    } else if (easy_count == 3) {
                         showDialog4(requireContext(), easy_count, dialog2)
                     } else {
                         showDialog6(requireContext(), easy_count, dialog2)
@@ -442,7 +496,7 @@ class HomeQuizFragment : Fragment() {
                 second_option.setBackgroundResource(R.drawable.home_quiz_round_yello)
                 checkans.visibility = View.VISIBLE
                 checkans.setOnClickListener {
-                    if (easy_count == 3) {
+                    if (easy_count == 5) {
                         showDialog4(requireContext(), easy_count, dialog2)
                     } else {
                         showDialog6(requireContext(), easy_count, dialog2)
@@ -460,11 +514,7 @@ class HomeQuizFragment : Fragment() {
                 third_option.setBackgroundResource(R.drawable.home_quiz_round_yello)
                 checkans.visibility = View.VISIBLE
                 checkans.setOnClickListener {
-                    if (easy_count == 5) {
-                        showDialog4(requireContext(), easy_count, dialog2)
-                    } else {
                         showDialog6(requireContext(), easy_count, dialog2)
-                    }
                     easy_count++
                     count()
                 }
@@ -478,7 +528,7 @@ class HomeQuizFragment : Fragment() {
                 fourth_option.setBackgroundResource(R.drawable.home_quiz_round_yello)
                 checkans.visibility = View.VISIBLE
                 checkans.setOnClickListener {
-                    if (easy_count == 2) {
+                    if (easy_count == 4) {
                         showDialog4(requireContext(), easy_count, dialog2)
                     } else {
                         showDialog6(requireContext(), easy_count, dialog2)
@@ -486,6 +536,14 @@ class HomeQuizFragment : Fragment() {
                     easy_count++
                     count()
                 }
+        }
+        backbtn.setOnClickListener {
+            dialog2.dismiss()
+            easy_count=0
+        }
+        outbtn.setOnClickListener {
+            dialog2.dismiss()
+            easy_count=0
         }
     }
 
@@ -512,6 +570,8 @@ class HomeQuizFragment : Fragment() {
         val line6 = dialog3.findViewById<ImageView>(R.id.line6)
         val quiz_num = dialog3.findViewById<TextView>(R.id.quiz_num)
         val hard_body = dialog3.findViewById<TextView>(R.id.hard_body)
+        val backbtn = dialog3.findViewById<ImageView>(R.id.backbtn)
+        val outbtn = dialog3.findViewById<ImageView>(R.id.outbtn)
 
         dialog3.show() // 팝업창 보이기
         val first_option = dialog3.findViewById<TextView>(R.id.first_option)
@@ -531,42 +591,42 @@ class HomeQuizFragment : Fragment() {
                 line1.visibility = View.INVISIBLE
                 line2.visibility = View.VISIBLE
                 quiz_num.setText("Q.2")
-                hard_body.setText("미성년자 수용자 자녀는 핸드폰 개통, 여권\n\n발급, 개인정보 열람 등을 만들기 힘듭니다.\n\n그 이유는 무엇일까요?")
+                hard_body.setText("보통 국내 재범률은 25% 남짓으로\n\n알려져 있습니다. 그렇다면 세움에서 지원해 온\n\n수용자들의 재범률은 약 몇 퍼센트 일까요? ")
                 checkans.visibility = View.INVISIBLE
-                first_option.setText("피해자들이 반대운동을 하기 때문")
-                second_option.setText("편견으로 인해 발급기관에서 거부하기 때문")
-                third_option.setText("신용 문제로 인해 법으로 금지하고 있기 때문")
-                fourth_option.setText("법정대리인 동반이 있어야 본인 확인이 가능하기 때문")
+                first_option.setText("5.7%")
+                second_option.setText("20.5%")
+                third_option.setText("53.6%")
+                fourth_option.setText("77.4%")
             } else if (easy_count == 3) {
                 line2.visibility = View.INVISIBLE
                 line3.visibility = View.VISIBLE
                 quiz_num.setText("Q.3")
-                hard_body.setText("우리나라에서 수용자 자녀에 관한 법률과 \n\n관련된 내용으로 \n\n옳은 것은 무엇일까요?")
+                hard_body.setText("형의 집행 및 수용자 처우에 관한\n\n법률개정(2019.4.5)의 내용으로\n\n적절하지 않은 것은?")
                 checkans.visibility = View.INVISIBLE
-                first_option.setText("아동복지법")
-                second_option.setText("형의 집행 및 수용자 처우에 관한 법")
-                third_option.setText("청소년 보호법")
-                fourth_option.setText("모두 다")
+                first_option.setText("소장은 신입자에게 아동복지법에 따른\n보호조치를 의뢰할 수 있음을 알려주어야 한다.")
+                second_option.setText("수용자가 미성년 자녀를 면회할 경우,\n접촉차단 시설이 설치되지 아니한 장소에서\n접견하게 할 수 있다. ")
+                third_option.setText("수용자가 임신 중이거나 출산 한 경우에는\n모성보호 및 건강유지를 위하여 적절한 조치를 취한다.")
+                fourth_option.setText("여성과 남성 수용자 모두 교도소 내\n생후 18개월까지의 자녀 양육을 허락한다.")
             } else if (easy_count == 4) {
                 line3.visibility = View.INVISIBLE
                 line4.visibility = View.VISIBLE
                 quiz_num.setText("Q.4")
-                hard_body.setText("교정본부가 하는 일로\n\n옳지 않은 내용은 무엇일까요?")
+                hard_body.setText("유럽연합(EU)에서 수용자 자녀에 대한\n\n관심을 촉구하기 위해 만든\n\n캐치 프레이즈로 적절한 것은?")
                 checkans.visibility = View.INVISIBLE
-                first_option.setText("판결")
-                second_option.setText("형벌의 관리, 감독")
-                third_option.setText("교화활동")
-                fourth_option.setText("사회복귀 준비")
+                first_option.setText("Stand up and go forward")
+                second_option.setText("Yes, One more time")
+                third_option.setText("Fly high!")
+                fourth_option.setText("Not my crime, Still my sentence!")
             } else if (easy_count == 5) {
                 line4.visibility = View.INVISIBLE
                 line5.visibility = View.VISIBLE
                 quiz_num.setText("Q.5")
-                hard_body.setText("UN 아동권리위원회의 권고 후\n\n우리 사회가 수용자 자녀를 위해\n\n변화한 것 중 아닌 것은?")
+                hard_body.setText("유엔 아동권리위원회는 대한민국 정부에\n\n수용자자녀의 권리보장을 권고했습니다.\n\n이에 발의된 ‘수용자 자녀 보호3법’으로\n\n적절하지 않은 것은 무엇일까요?")
                 checkans.visibility = View.INVISIBLE
-                first_option.setText("아동친화적 가족 접결실을 교정시설에 설치")
-                second_option.setText("수용자자녀 보호 3법을 개정발의하여 국회에서 논의 중")
-                third_option.setText("수용자 자녀를 위한 관련부처 협의체 구성")
-                fourth_option.setText("지방교정청 위기수용자자녀 지원팀 운영")
+                first_option.setText("구속 시 자녀 유무와 보호대상아동 여부를 확인하고,\n복지서비스를 제공받을 수 있는 법적 근거를 마련한다.")
+                second_option.setText("수용자가 자녀를 접견할 때에는 차단 시설이 없는 장소에서\n자유로운 접견이 가능하도록 한다.")
+                third_option.setText("수용자 자녀에 대한 지원·인권 보호에 대한 규정을\n마련하고, 교정시설 최초 입소 과정에서 자녀 양육환경을\n조사하고 결과를 통보하도록 한다.")
+                fourth_option.setText("수용자 자녀가 법정 대리인의 동의가 필요한 경우,\n지원 기관 등이 대리할 수 있는 적절한 시스템을 마련한다.")
             }
             reset()
         }
@@ -582,7 +642,7 @@ class HomeQuizFragment : Fragment() {
             checkans.setOnClickListener {
                 if (easy_count == 1) {
                     showDialog4(requireContext(), easy_count, dialog3)
-                } else if (easy_count == 4) {
+                } else if (easy_count == 2) {
                     showDialog4(requireContext(), easy_count, dialog3)
                 } else {
                     showDialog6(requireContext(), easy_count, dialog3)
@@ -600,11 +660,7 @@ class HomeQuizFragment : Fragment() {
             second_option.setBackgroundResource(R.drawable.home_quiz_round_yello)
             checkans.visibility = View.VISIBLE
             checkans.setOnClickListener {
-                if (easy_count == 3) {
-                    showDialog4(requireContext(), easy_count, dialog3)
-                } else {
                     showDialog6(requireContext(), easy_count, dialog3)
-                }
                 easy_count++
                 count()
             }
@@ -618,11 +674,7 @@ class HomeQuizFragment : Fragment() {
             third_option.setBackgroundResource(R.drawable.home_quiz_round_yello)
             checkans.visibility = View.VISIBLE
             checkans.setOnClickListener {
-                if (easy_count == 5) {
-                    showDialog4(requireContext(), easy_count, dialog3)
-                } else {
                     showDialog6(requireContext(), easy_count, dialog3)
-                }
                 easy_count++
                 count()
             }
@@ -636,7 +688,11 @@ class HomeQuizFragment : Fragment() {
             fourth_option.setBackgroundResource(R.drawable.home_quiz_round_yello)
             checkans.visibility = View.VISIBLE
             checkans.setOnClickListener {
-                if (easy_count == 2) {
+                if (easy_count == 3) {
+                    showDialog4(requireContext(), easy_count, dialog3)
+                } else if (easy_count == 4) {
+                showDialog4(requireContext(), easy_count, dialog3)
+                } else if (easy_count == 5) {
                     showDialog4(requireContext(), easy_count, dialog3)
                 } else {
                     showDialog6(requireContext(), easy_count, dialog3)
@@ -645,6 +701,13 @@ class HomeQuizFragment : Fragment() {
                 count()
             }
         }
-
+        backbtn.setOnClickListener {
+            dialog3.dismiss()
+            easy_count=0
+        }
+        outbtn.setOnClickListener {
+            dialog3.dismiss()
+            easy_count=0
+        }
     }
 }
