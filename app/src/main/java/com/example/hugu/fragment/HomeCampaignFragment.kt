@@ -3,8 +3,10 @@ package com.example.hugu.fragment
 import android.app.Activity
 import android.app.Dialog
 import android.content.Context
+import android.content.Intent
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
+import android.net.Uri
 import android.os.Build
 import android.os.Bundle
 import android.util.Log
@@ -33,7 +35,6 @@ class HomeCampaignFragment : Fragment() {
     ): View? {
         viewbinding = FragmentHomeCampaignBinding.inflate(inflater, container, false)
         viewbinding2 = FragmentHomeBinding.inflate(inflater, container, false)
-
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_home_campaign, container, false)
     }
@@ -48,6 +49,9 @@ class HomeCampaignFragment : Fragment() {
 
         val otherLayout = LayoutInflater.from(context).inflate(R.layout.fragment_home, null)
         val viewPager = otherLayout.findViewById<ViewPager2>(R.id.viewPager)
+        val facebook = view.findViewById<ImageView>(R.id.facebook)
+        val youtube = view.findViewById<ImageView>(R.id.youtube)
+        val instargram = view.findViewById<ImageView>(R.id.instargram)
 
         val pagerAdapter = PagerFragmentStateAdapter(requireActivity())
         pagerAdapter.addFragment(HomeCampaignFragment())
@@ -66,10 +70,24 @@ class HomeCampaignFragment : Fragment() {
             activity.changeFragment(2)
         }
         campaign_option.setOnClickListener {
-            activity.changeFragment(3)
+            var intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://iseum.or.kr/campaign"))
+            startActivity(intent)
         }
         meta_option.setOnClickListener {
-            activity.changeFragment(4)
+            var intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://iseum.or.kr/154"))
+            startActivity(intent)
+        }
+        instargram.setOnClickListener {
+            var intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.instagram.com/iseum_official/"))
+            startActivity(intent)
+        }
+        facebook.setOnClickListener {
+            var intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/yonseihabitat/"))
+            startActivity(intent)
+        }
+        youtube.setOnClickListener {
+            var intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/channel/UCJcNS1p9AP4DUkKKtejFXLg"))
+            startActivity(intent)
         }
 
         viewPager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {

@@ -2,11 +2,14 @@ package com.example.hugu.fragment
 
 import android.annotation.SuppressLint
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import android.widget.ScrollView
+import androidx.core.widget.NestedScrollView
 import com.example.hugu.MainActivity
 import com.example.hugu.R
 
@@ -32,8 +35,6 @@ class HomeCampaignTipFragment : Fragment() {
         var lightBtn = view.findViewById<ImageView>(R.id.light_btn)
         var schoolBtn = view.findViewById<ImageView>(R.id.school_btn)
 
-        val activity = activity as MainActivity
-
         backBtn.setOnClickListener {
         //뒤로가기 만들어야함
         }
@@ -44,6 +45,15 @@ class HomeCampaignTipFragment : Fragment() {
             // 새로운 레이아웃을 추가합니다.
             val newLayout = inflater.inflate(R.layout.fragment_home_campaign_tip_money, container, false)
             container.addView(newLayout)
+
+            var upBtn = newLayout.findViewById<ImageView>(R.id.money_up_btn)
+            val scrollView = newLayout.findViewById<NestedScrollView>(R.id.ns_sign)
+
+            upBtn.setOnClickListener {
+                scrollView.post {
+                    scrollView.fullScroll(ScrollView.FOCUS_UP)
+                }
+            }
         }
         phoneBtn.setOnClickListener {
             // 기존 레이아웃을 제거합니다.
@@ -68,6 +78,15 @@ class HomeCampaignTipFragment : Fragment() {
             // 새로운 레이아웃을 추가합니다.
             val newLayout = inflater.inflate(R.layout.fragment_home_campaign_tip_passport, container, false)
             container.addView(newLayout)
+
+            var upBtn = newLayout.findViewById<ImageView>(R.id.passport_up_btn)
+            val scrollView = newLayout.findViewById<NestedScrollView>(R.id.ns_sign)
+
+            upBtn.setOnClickListener {
+                scrollView.post {
+                    scrollView.fullScroll(ScrollView.FOCUS_UP)
+                }
+            }
         }
         lightBtn.setOnClickListener {
             // 기존 레이아웃을 제거합니다.

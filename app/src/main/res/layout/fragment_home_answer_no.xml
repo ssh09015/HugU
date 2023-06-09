@@ -16,6 +16,8 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:textSize="22dp"
+            android:fontFamily="@font/pretendard_black"
+            android:textColor="@color/black"
             android:text="오답입니다">
         </TextView>
         <ImageView
@@ -31,6 +33,8 @@
             android:layout_height="175dp"
             android:layout_marginLeft="11dp"
             android:gravity="center"
+            android:fontFamily="@font/pretendard_medium"
+            android:textColor="@color/black"
             android:text="일반 수용자는 재복역률이 3년 안에 25%입니다. \n\n반면, 세움에서 수용자 자녀를 지원했을 때, 부모가\n\n다시 복역하는 비율은 5.7%에 머물렀습니다."
             android:textSize="13dp"></TextView>
 
