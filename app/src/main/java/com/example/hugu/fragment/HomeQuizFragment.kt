@@ -342,7 +342,8 @@ class HomeQuizFragment : Fragment() {
                         showDialog4(requireContext(), easy_count, dialog1) //틀린거
                         line2.visibility = View.INVISIBLE
                         line3.visibility = View.VISIBLE
-                        quiz_num.setText("수용자 자녀를 지원하는\n\n해외 민간 단체가 \n\n아닌 것은 무엇인가요?")
+                        quiz_num.setText("Q.3")
+                        easy_body.setText("수용자 자녀를 지원하는\n\n해외 민간 단체가 \n\n아닌 것은 무엇인가요?")
                         count = 0
                         Log.e("HelpFragment", "Quiz3")
                     } else if (easy_count == 3) {
@@ -382,6 +383,7 @@ class HomeQuizFragment : Fragment() {
     }
     var easy_count=1
     fun showDialog2(context: Context) {
+        easy_count=1
         score = 0
         var count = 0
         val dialog2 = Dialog(context)
@@ -548,6 +550,7 @@ class HomeQuizFragment : Fragment() {
     }
 
     fun showDialog3(context: Context) {
+        easy_count=1
         score = 0
         var count = 0
         val dialog3 = Dialog(context)
