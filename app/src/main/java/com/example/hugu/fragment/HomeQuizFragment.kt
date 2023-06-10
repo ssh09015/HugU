@@ -104,7 +104,7 @@ class HomeQuizFragment : Fragment() {
                 yes_body.setText("이외에도 부모가 수용된 후에도\n\n안정적인 집에서 건강한 어른의 보살핌을 받고\n\n보호받을 권리,부모가 수용된 후에도\n\n신체적/심리적으로 건강하게\n\n발달할 수 있는 권리 등이 존재합니다.")
             }else if(easy_count==5) {
                 score++
-                yes_body.setText("형사절차가 진행되는 동안 자녀를\n\n보호하기 위해서는 아동보호환경 마련하기,\n\n부모를 만날 권리 지키기,수용자 자녀 전문\n\n지원기관의 도움 받기등이 필요합니다.  ")
+                yes_body.setText("형사절차가 진행되는 동안 자녀를\n\n보호하기 위해서는 아동보호환경 마련하기,\n\n부모를 만날 권리 지키기,수용자 자녀 전문\n\n지원기관의 도움 받기등이 필요합니다.")
             }
         }
         if(dialog1.findViewById<TextView>(R.id.difficulty).text=="hard"){
@@ -171,7 +171,7 @@ class HomeQuizFragment : Fragment() {
             }else if(easy_count==4){
                 no_body.setText("이외에도 부모가 수용된 후에도\n\n안정적인 집에서 건강한 어른의 보살핌을 받고\n\n보호받을 권리,부모가 수용된 후에도\n\n신체적으로 건강하게 심리적으로\n\n보호받을 수 있는 권리등이 존재합니다.")
             }else if(easy_count==5) {
-                no_body.setText("형사절차가 진행되는 동안 자녀를\n\n보호하기 위해서는 아동보호환경 마련하기,\n\n부모를 만날 권리 지키기,수용자 자녀 전문\n\n지원기관의 도움 받기등이 필요합니다.  ")
+                no_body.setText("형사절차가 진행되는 동안 자녀를\n\n보호하기 위해서는 아동보호환경 마련하기,\n\n부모를 만날 권리 지키기,수용자 자녀 전문\n\n지원기관의 도움 받기등이 필요합니다.")
             }
         }
         if(dialog1.findViewById<TextView>(R.id.difficulty).text=="hard"){
@@ -457,7 +457,7 @@ class HomeQuizFragment : Fragment() {
                 line4.visibility = View.INVISIBLE
                 line5.visibility = View.VISIBLE
                 quiz_num.setText("Q.5")
-                normal_body.setText("형사절차가 진행되는 동안 자녀를 보호하기 위해\n\n필요한 것으로 적절하지 않은 것은?")
+                normal_body.setText("형사절차가 진행되는 동안 자녀를 보호하기\n\n위해 필요한 것으로 적절하지 않은것은?")
                 checkans.visibility = View.GONE
                 first_option.setText("아동보호환경 마련하기")
                 second_option.setText("임의로 주변인물에게 수용 사실에 대해 알리기")
@@ -594,7 +594,7 @@ class HomeQuizFragment : Fragment() {
                 line1.visibility = View.INVISIBLE
                 line2.visibility = View.VISIBLE
                 quiz_num.setText("Q.2")
-                hard_body.setText("보통 국내 재범률은 25% 남짓으로\n\n알려져 있습니다. 그렇다면 세움에서 지원해 온\n\n수용자들의 재범률은 약 몇 퍼센트 일까요? ")
+                hard_body.setText("보통 국내 재범률은 25% 남짓으로\n\n알려져 있습니다.\n\n그렇다면 세움에서 지원해 온\n\n수용자들의 재범률은\n\n약 몇 퍼센트 일까요? ")
                 checkans.visibility = View.INVISIBLE
                 first_option.setText("5.7%")
                 second_option.setText("20.5%")
@@ -627,8 +627,8 @@ class HomeQuizFragment : Fragment() {
                 hard_body.setText("유엔 아동권리위원회는 대한민국 정부에\n\n수용자자녀의 권리보장을 권고했습니다.\n\n이에 발의된 ‘수용자 자녀 보호3법’으로\n\n적절하지 않은 것은 무엇일까요?")
                 checkans.visibility = View.INVISIBLE
                 first_option.setText("구속 시 자녀 유무와 보호대상아동 여부를 확인하고,\n복지서비스를 제공받을 수 있는 법적 근거를 마련한다.")
-                second_option.setText("수용자가 자녀를 접견할 때에는 차단 시설이 없는 장소에서\n자유로운 접견이 가능하도록 한다.")
-                third_option.setText("수용자 자녀에 대한 지원·인권 보호에 대한 규정을\n마련하고, 교정시설 최초 입소 과정에서 자녀 양육환경을\n조사하고 결과를 통보하도록 한다.")
+                second_option.setText("수용자가 자녀를 접견할 때에는\n차단 시설이 없는 장소에서\n자유로운 접견이 가능하도록 한다.")
+                third_option.setText("수용자 자녀에 대한 지원·인권 보호에 대한 규정을\n마련하고, 교정시설 최초 입소 과정에서 자녀\n양육환경을 조사하고 결과를 통보하도록 한다.")
                 fourth_option.setText("수용자 자녀가 법정 대리인의 동의가 필요한 경우,\n지원 기관 등이 대리할 수 있는 적절한 시스템을 마련한다.")
             }
             reset()
