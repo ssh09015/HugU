@@ -205,7 +205,7 @@
                     android:layout_height="50dp"
                     android:layout_marginBottom="12dp"
                     android:layout_gravity="center"
-                    android:text="세이브더 칠드런"
+                    android:text="세이브 더 칠드런"
                     android:textSize="14dp"
                     android:textColor="@color/black"
                     android:gravity="center"
